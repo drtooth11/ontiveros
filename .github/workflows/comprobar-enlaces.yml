@@ -13,11 +13,13 @@ jobs:
           python3 - <<'PY'
           import re, pathlib, urllib.request, json
           base = json.load(open("src/content.json"))["url_publica"].rstrip("/")
+          from urllib.parse import urlparse
+          origin = "{0.scheme}://{0.netloc}".format(urlparse(base))
           urls = set()
           for f in pathlib.Path("dist").rglob("*.html"):
               for u in re.findall(r'(?:href|src)="([^"#]+)"', f.read_text()):
                   u = u.replace("&amp;", "&")
-                  if u.startswith("/") : urls.add(base + u)
+                  if u.startswith("/") : urls.add(origin + u)
                   elif u.startswith(base): urls.add(u)
           UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0 Safari/537.36"}
           bad = []
@@ -26,7 +28,7 @@ jobs:
                   r = urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers=UA), timeout=30); c = r.status
               except urllib.error.HTTPError as e: c = e.code
               except Exception as e: c = str(e)[:40]
-              if c != 200: bad.append(f"{c} {u.replace(base,'')}")
+              if c != 200: bad.append(f"{c} {u.replace(origin,'')}")
           print(f"::notice::Comprobados {len(urls)} enlaces, {len(bad)} con error")
           for i in range(0, len(bad), 25): print("::warning::" + " | ".join(bad[i:i+25]))
           PY
