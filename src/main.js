@@ -49,7 +49,10 @@
         if(en.isIntersecting && byId[en.target.id]){
           chips.forEach(function(c){ c.classList.remove('is-on'); });
           var c = byId[en.target.id]; c.classList.add('is-on');
-          c.scrollIntoView({block:'nearest', inline:'center'});
+          // centra el botón solo dentro de la barra (nunca mueve la página)
+          var bar = c.parentNode;
+          var x = c.offsetLeft - (bar.clientWidth - c.offsetWidth) / 2;
+          if(bar.scrollTo) bar.scrollTo({left: x, behavior: 'smooth'}); else bar.scrollLeft = x;
         }
       });
     }, {rootMargin:'-40% 0px -55% 0px'});
