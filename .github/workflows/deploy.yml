@@ -51,7 +51,7 @@ jobs:
 
       - name: Aviso si aún no hay secretos
         if: env.HAS_TOKEN != 'true'
-        run: echo "::warning::Sin secreto DEPLOY_TOKEN: la web se ha generado pero NO se ha publicado."
+        run: echo "::warning::Falta el secreto DEPLOY_TOKEN. La web se ha generado pero NO se ha publicado."
 
       - name: Publicar en el servidor (HTTPS, solo archivos cambiados)
         if: env.HAS_TOKEN == 'true'
