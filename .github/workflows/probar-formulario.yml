@@ -1,0 +1,27 @@
+name: Probar formulario (envía un email de prueba)
+on: workflow_dispatch
+jobs:
+  form:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Envío de prueba del formulario
+        env:
+          DEPLOY_URL: ${{ secrets.DEPLOY_URL }}
+        run: |
+          python3 - <<'PY'
+          import os, json, time, urllib.request, urllib.parse
+          base = os.environ["DEPLOY_URL"].rsplit("/", 1)[0] + "/contact.php"
+          UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0 Safari/537.36"}
+          def go(url, data=None):
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=UA), timeout=60) as r:
+                      return r.status, r.read().decode()
+              except urllib.error.HTTPError as ex:
+                  return ex.code, ex.read().decode()[:300]
+          st, b = go(base + "?captcha=1"); print("::notice::captcha", st, b[:120])
+          c = json.loads(b); a, bb = map(int, c["q"].split(" + ")); time.sleep(4)
+          d = urllib.parse.urlencode({"nombre": "Prueba", "email": "ocram17@gmail.com",
+               "telefono": "600000000", "tipo": "cita", "motivo": "Prueba", "mensaje": "Prueba automática del formulario de la web nueva de Ontiveros", "acepto": "1",
+               "captcha": a + bb, "token": c["token"]}).encode()
+          print("::notice::envio", *go(base, d))
+          PY

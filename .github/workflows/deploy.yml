@@ -1,0 +1,62 @@
+name: Publicar web Ontiveros
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      completo:
+        description: 'Subir todos los archivos (1 = sí)'
+        default: '0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HAS_TOKEN: ${{ secrets.DEPLOY_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Copiar imágenes de WordPress que falten
+        run: python3 fetch_images.py
+
+      - name: Guardar imágenes nuevas en el repositorio
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add src/img
+          git diff --cached --quiet || { git commit -m "Copia de imágenes desde WordPress [skip ci]"; git push; }
+
+      - name: Instalar dependencias
+        run: pip install --quiet pillow
+
+      - name: Generar web
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+        run: python3 build.py
+
+      - name: Aviso si aún no hay secretos
+        if: env.HAS_TOKEN != 'true'
+        run: echo "::warning::Sin secreto DEPLOY_TOKEN: la web se ha generado pero NO se ha publicado."
+
+      - name: Publicar en el servidor (HTTPS, solo archivos cambiados)
+        if: env.HAS_TOKEN == 'true'
+        env:
+          DEPLOY_URL: ${{ secrets.DEPLOY_URL }}
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          COMPLETO: ${{ github.event.inputs.completo }}
+        run: python3 deploy.py

@@ -1,0 +1,32 @@
+name: Comprobar enlaces e imágenes
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet pillow && python3 build.py
+      - name: Comprobar
+        run: |
+          python3 - <<'PY'
+          import re, pathlib, urllib.request, json
+          base = json.load(open("src/content.json"))["url_publica"].rstrip("/")
+          urls = set()
+          for f in pathlib.Path("dist").rglob("*.html"):
+              for u in re.findall(r'(?:href|src)="([^"#]+)"', f.read_text()):
+                  u = u.replace("&amp;", "&")
+                  if u.startswith("/") : urls.add(base + u)
+                  elif u.startswith(base): urls.add(u)
+          UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0 Safari/537.36"}
+          bad = []
+          for u in sorted(urls):
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers=UA), timeout=30); c = r.status
+              except urllib.error.HTTPError as e: c = e.code
+              except Exception as e: c = str(e)[:40]
+              if c != 200: bad.append(f"{c} {u.replace(base,'')}")
+          print(f"::notice::Comprobados {len(urls)} enlaces, {len(bad)} con error")
+          for i in range(0, len(bad), 25): print("::warning::" + " | ".join(bad[i:i+25]))
+          PY

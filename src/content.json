@@ -1,0 +1,525 @@
+{
+  "url_publica": "https://clinicadentalontiveros.es/web/",
+  "recursos": "https://clinicadentalontiveros.es",
+  "noindex": true,
+
+  "site": {
+    "name": "Clínica Dental Ontiveros",
+    "logo": "/wp-content/uploads/2023/03/logo.jpg",
+    "favicon": "/wp-content/uploads/2023/03/logo__1_-removebg-preview.png",
+    "tel1": "952 92 43 22",
+    "tel1_href": "+34952924322",
+    "tel2": "640 08 21 01",
+    "tel2_href": "+34640082101",
+    "whatsapp": "https://wa.me/34640082101",
+    "whatsapp_texto": "Hola, les escribo desde la web de Clínica Dental Ontiveros. Me gustaría pedir cita.",
+    "email": "info@clinicadentalontiveros.es",
+    "address": "C./ San Bernabé Edif. Cibeles n 3 - 1 dcha. 29603 - Marbella",
+    "calle": "C./ San Bernabé, Edif. Cibeles nº 3, 1º dcha.",
+    "cp": "29603",
+    "ciudad": "Marbella",
+    "provincia": "Málaga",
+    "maps_q": "Calle San Bernabé Edificio Cibeles 3 29603 Marbella",
+    "horario": [],
+    "google_reviews": "",
+    "fundacion": "2001"
+  },
+
+  "home": {
+    "seo_title": "Clínica Dental Ontiveros | Dentista en Marbella desde 2001",
+    "seo_desc": "Clínica dental en Marbella: odontología general, ortodoncia invisible, implantes, estética dental y blanqueamiento. Primera visita gratuita. Tel. 952 92 43 22.",
+    "hero_img": "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.55-PM.jpeg",
+    "hero_eyebrow": "Clínica Dental Ontiveros",
+    "hero_title": "Conoce tu mejor sonrisa",
+    "intro_eyebrow": "Clínica Dental Ontiveros",
+    "intro_title": "Tu dentista de confianza",
+    "intro": [
+      "En Clínica dental Ontiveros te enseñamos nuevas formas de conseguir la sonrisa que siempre has buscado.",
+      "Nuestro equipo médico te recibirá con los brazos abiertos, estudiará tu caso y te ofrecerá la solución que más se adapte a tus necesidades."
+    ],
+    "intro_img": "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.50-PM.jpeg",
+    "servicios_title": "Nos preocupamos de tu sonrisa y de tu salud",
+    "servicios_sub": "Te asesoramos de forma gratuita y sin compromiso",
+    "servicios": [
+      {"titulo": "Odontología general", "texto": "Mediante una fase diagnóstica apropiada podemos determinar las necesidades concretas de tu boca para poder ..", "ancla": "odontologia-general"},
+      {"titulo": "Blanqueamiento", "texto": "El blanqueamiento dental es un tratamiento estético que no provoca abrasión que logra dejar los dientes más blancos, brillantes y saludables.", "ancla": "blanqueamiento"},
+      {"titulo": "Implantes", "texto": "La implantología es actualmente la técnica en mayor expansión dentro del ámbito odontológico.", "ancla": "implantes"},
+      {"titulo": "Prótesis", "texto": "Es la especialidad que se encarga de proteger o sustituir los dientes perdidos bien sobre dientes naturales remanentes o sobre los implantes ..", "ancla": "protesis"},
+      {"titulo": "Cirugía general", "texto": "El blanqueamiento dental es un tratamiento estético que no provoca abrasión que logra dejar los dientes más blancos, brillantes y saludables.", "ancla": "cirugia-general"},
+      {"titulo": "Estética dental", "texto": "Esta área de la odontología es una de las que más ha avanzado en los últimos años. Ya no solo se busca resolver un problema o reponer piezas dentales..", "ancla": "estetica-dental"}
+    ],
+    "visita_title": "1ª Visita gratuita",
+    "visita": [
+      "¿Suena bien verdad? Pide cita en nuestra Clínica Dental y la primera toma de contacto será totalmente gratuita. Recibirás atención 100% personalizada por parte de los mejores profesionales de la odontología y la estética dental.",
+      "Te realizaremos un estudio a fondo para poder ofrecerte un diagnóstico personalizado y poder evaluar el tratamiento que más se adapta a tus necesidades para mejorar tu salud bucodental y la estética de tu sonrisa.",
+      "La primera visita incluye gratis el plan de tratamiento y saldrás de la Clínica con un presupuesto detallado ¡Ven a vernos, en Clínica Dental Ontiveros!"
+    ],
+    "visita_img": "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.53-PM.jpeg",
+    "opiniones_title": "¿Qué opinan nuestros pacientes?",
+    "opiniones": [
+      "... Por salud, economía, buen trato, cualificación óptima en desempeño profesional y calidad óptima de materiales y resultados, ¡¡recomiendo 100% Clínica Dental Ontiveros!!!",
+      "Me estoy realizado un tratamiento de ortodoncia a raíz de un problema de ATM. Estoy muy satisfecha con los resultados que estoy obteniendo y el trato a nivel profesional es excelente",
+      "Me encanta mi dentista, la limpieza dental ha sido rápida y sin dolor, notando un cambio en mis encías desde mi primera sesión. Son un equipo de profesionales excelente."
+    ],
+    "faq_title": "Preguntas más frecuentes",
+    "faq": [
+      {"q": "¿Qué es más caro los brackets o la ortodoncia con alineadores?", "a": "Quizá te preguntes qué es más caro: ¿los brackets o los alineadores? Aunque hay algunas técnicas y tratamientos de ortodoncia que pueden ser bastante costosos, el precio medio de los aparatos tradicionales suele ser mayor al de los alineadores invisibles. Sin embargo, es importante tener en cuenta que el coste final de tu tratamiento de ortodoncia dependerá de varios factores, como la gravedad de tu caso, el tipo de aparatos o alineadores que elijas y la duración de tu tratamiento."},
+      {"q": "¿Qué es mejor la ortodoncia invisible o los brackets?", "a": "Es una pregunta que los ortodoncistas escuchan a menudo: ¿qué es mejor, la ortodoncia invisible o los brackets? En términos de eficacia, ambos tratamientos son efectivos. Sin embargo, debe ser un ortodoncista profesional quien recomiende uno u otro a cada paciente. Normalmente, la ortodoncia invisible se recomienda en casos leves y moderados, mientras que los aparatos son útiles en casos más graves."},
+      {"q": "¿Qué pasa si no llevas los alineadores 22 horas?", "a": "Debido a que se quitan los alineadores, no afectarán sus dientes mientras no se estén usando. Por lo tanto, una persona debe usarlos durante las horas diarias prescritas por el ortodoncista."}
+    ]
+  },
+
+  "quienes": {
+    "seo_title": "Quiénes somos | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "Clínica dental en Marbella especializada en tratamiento odontológico integral desde 2001. Conoce nuestros valores y a nuestro equipo de especialistas.",
+    "hero_img": "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.50-PM-1.jpeg",
+    "eyebrow": "Sobre nosotros",
+    "titulo": "Experiencia y compromiso",
+    "texto": [
+      "La Clínica dental Ontiveros está especializada en el tratamiento odontológico integral. Situada en Marbella, en el corazón de la costa del sol, abrió sus puertas en el año 2001 y desde entonces su máxima aspiración ha sido la satisfacción de los pacientes."
+    ],
+    "img": "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.53-PM.jpeg",
+    "cifras": [
+      {"valor": "22", "prefijo": "+", "texto": "Años de experiencia"},
+      {"valor": "200", "prefijo": "+", "texto": "Casos con Ontiveros Aligners"},
+      {"valor": "10", "prefijo": "+", "texto": "Años de ortodoncia invisible Invisalign"}
+    ],
+    "valores_title": "¿Qué puedes esperar de nosotros",
+    "valores_sub": "Te asesoramos de forma gratuita y sin compromiso",
+    "valores": [
+      {"titulo": "Excelencia", "texto": "Un equipo de especialistas en todas las áreas de la odontología que te garantiza la mejor atención a tu salud dental.", "icono": "award"},
+      {"titulo": "Transparencia", "texto": "nos adaptamos a tus necesidades y buscamos la mejor opción para ti, la honestidad es nuestra seña de identidad.", "icono": "hand"},
+      {"titulo": "Agilidad", "texto": "Múltiples alternativas de tratamiento. Porque cada día aparecen nuevas técnicas y es nuestro compromiso poder ofrecértelas.", "icono": "bolt"},
+      {"titulo": "Positividad", "texto": "Una clínica diferente, con un ambiente cómodo y confortable que hará que visitar a tu dentista sea una experiencia más positiva.", "icono": "smile"}
+    ],
+    "queremos_title": "¿Qué queremos?",
+    "queremos": [
+      "Queremos ser un referente para aquellos que buscan profesionalidad y cercanía.",
+      "Queremos enfocarnos en la prevención, es decir, actuar antes de que los problemas aparezcan.",
+      "Queremos ofrecerte siempre los últimos avances tecnológicos, por eso nuestros profesionales están en continua formación.",
+      "Queremos que la expresión de la satisfacción de nuestros pacientes sea nuestra mejor garantía."
+    ],
+    "equipo_eyebrow": "Equipo médico",
+    "equipo_title": "Conoce nuestro equipo",
+    "equipo_texto": [
+      "Cuando se trata del cuidado dental hay que ponerse siempre en manos de profesionales, por eso tenemos el mejor equipo médico formado por especialistas titulados y cualificados en odontología general, implantes, cirugía, ortodoncia, odontopediatría y endodoncia.",
+      "Todos ellos trabajan interdisciplinarmente, y junto a nuestras auxiliares analizarán su caso y realizarán un presupuesto personalizado según sus necesidades y el tratamiento que necesite."
+    ],
+    "equipo": [
+      {"nombre": "Sergio Ontiveros Torices", "cargo": "Odontología general y ortodoncia", "img": "/wp-content/uploads/2023/03/sergio_ontiveros.jpg", "resumen": "LICENCIADO EN ODONTOLOGIA. Universidad de Granada…", "cv": "sergio-ontiveros-torices"},
+      {"nombre": "Juan Manuel Blasco Melguizo", "cargo": "Implantología", "img": "/wp-content/uploads/2023/03/juan_manuel_blasco_melguizo.jpg", "resumen": "Licenciado en Odontología en la Facultad de Odontología de la Universidad de Granada…", "cv": "juan-manuel-blasco-melguizo"},
+      {"nombre": "", "cargo": "Auxiliar clínica", "img": "/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-22-at-3.05.21-PM.jpeg"},
+      {"nombre": "Javier Bravo", "cargo": "Especialista Endodoncia", "img": "/wp-content/uploads/2023/11/Javier.jpeg"},
+      {"nombre": "María José Albite", "cargo": "Recepcionista", "img": "/wp-content/uploads/2023/11/Maria.jpeg"}
+    ],
+    "galeria": [
+      "/wp-content/uploads/2023/04/equipo_medico_de_34.jpg",
+      "/wp-content/uploads/2023/04/equipo_medico.jpg",
+      "/wp-content/uploads/2023/04/equipo_medico_de_2.jpg",
+      "/wp-content/uploads/2023/04/equipo_medico_de_3.jpg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.53-PM-1.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.54-PM-1.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.51-PM-1.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.50-PM-2.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.51-PM.jpeg"
+    ],
+    "cta_title": "Ponte en contacto",
+    "cta_sub": "¡Queremos cuidar tu salud bucodental!"
+  },
+
+  "equipo_medico": {
+    "seo_title": "Equipo médico | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "Currículum de los odontólogos de Clínica Dental Ontiveros en Marbella: ortodoncia, implantología, cirugía bucal, periodoncia y odontopediatría.",
+    "hero_img": "/wp-content/uploads/2023/04/equipo_medico.jpg",
+    "titulo": "Equipo médico",
+    "doctores": [
+      {
+        "id": "sergio-ontiveros-torices",
+        "nombre": "Sergio Ontiveros Torices",
+        "nombre_web_actual": "SERGIO ONTVEROS TORICES",
+        "cargo": "Odontología general y ortodoncia",
+        "img": "/wp-content/uploads/2023/03/sergio_ontiveros.jpg",
+        "bloques": [
+          {"lista": [
+            "LICENCIADO EN ODONTOLOGIA. Universidad de Granada 1994-1999",
+            "Especialista en Ortodoncia y Ortopedia Dentofacial. Dr Morales 2002-2003",
+            "Master en la Técnica Damon. Dr Ceballos 2008-2009",
+            "Certificado en la Técnica Invisalign",
+            "Master en el Sistema Invisalign. Dr Malagón y Dr Peydro",
+            "Experto en Gestión de Clínica y recursos Sanitarios odontológicos. Universidad de Sevilla 2012-2013",
+            "Colaboración como ortodoncista exclusivo en clínicas dentales de Estepona y Sabinillas",
+            "Ortodoncia Lingual 2 D Forestadent",
+            "Nuevas tecnologías en ortodoncia. Sistema Carriere. Dr Camon",
+            "Ponencias: “urgencias en la clínica dental” y “satisfacción de pacientes de una clínica dental”"
+          ]}
+        ]
+      },
+      {
+        "id": "manuel-jimenez-ruiz",
+        "nombre": "Manuel Jimenez Ruiz",
+        "cargo": "",
+        "img": "/wp-content/uploads/2023/03/manuel_jimenez_ruiz.jpg",
+        "bloques": [
+          {"lista": ["Licenciado en Odontología por la Universidad Europea de Madrid (UEM), 2000-2005."]},
+          {"h": "Formación complementaria"},
+          {"lista": [
+            "Diploma Universitario en Periodoncia, organizado por la Unidad de Formación Continua de la Facultad de Odontología de la Universidad Complutense de Madrid. Celebrado durante los meses de Mayo a Noviembre del 2006.",
+            "Curso Clínico de Especialización en Endodoncia (ciclo lectivo 2005 – 2006), dictado por los Dres. Stambolsky Guelfand y Rodríguez Benítez y celebrado en el Ateneo de Postgrado Odontológico (Madrid).",
+            "Curso de Endodoncia Avanzada: Retratamiento y Cirugía Periapical, celebrado en Málaga los días 19 y 20 de Octubre del 2012.",
+            "Curso de Ortodoncia y Ortopedia Dentofacial Medical Corps Orthodontics Málaga 2009, de 160 horas de duración y dictado por los Dres. Fernando Morales y Cortázar López.",
+            "Curso de Técnica Lingual 2D, dictado por la Dra. Viviana Gallardo y celebrado en Málaga en Marzo del 2011.",
+            "Simposio Ibérico de Biomet 3i “Avances Tecnológicos y Revolución Clínica” celebrado en Madrid los días 15, 16 y 17 de Enero del 2009.",
+            "Curso de lesiones orales frecuentes en la práctica asistencial, dictado por el Dr. Rodríguez Archilla y celebrado en Málaga en Octubre del 2008.",
+            "Rehabilitación del sector anterior con composites, dictado por el Dr. Autrán Mateu y celebrado en Málaga en Noviembre del 2007.",
+            "Nuevos Avances en Implantología, celebrado en Málaga los días 1 y 2 de Junio del 2007.",
+            "Integración de los Implantes en la Odontología restauradora de vanguardia, celebrado en Málaga en mayo del 2007.",
+            "Campaña Nacional de prevencion del cáncer oral, celebrada en Málaga en Marzo del 2007.",
+            "El Tercer Molar incluido; Diagnóstico y tratamiento en la práctica clínica, dictado por los Dres. Romero Ruiz y Gutiérrez Pérez y celebrado en Málaga los días 23 y 24 de Junio del 2006.",
+            "Curso teórico de actualización en cirugía oral e implantología, celebrado en Madrid los días 5 y 6 de Mayo del 2006.",
+            "Curso de Blanqueamiento Dental, dictado por los Dres. Forner Navarro y Llena Puy y celebrado en Guadalajara los días 3 y 4 de Marzo del 2006.",
+            "IV Jornadas de Actualización en Implantología, (Estado del arte en implantología) celebradas en la sede del Colegio Oficial de Médicos de Madrid los días 10 y 11 de Febrero del 2006.",
+            "Curso de dirección de instalaciones de radiodiagnóstico dental, celebrado en Madrid del 18 al 20 de Enero de 2006 por el Instituto de Formación Científica y Tecnológica.",
+            "Tratamiento de los problemas estéticos con implicación periodontal, celebrado en Madrid el día 2 de Diciembre de 2005 y organizado por la Comision Científica del Ilustre Colegio Oficial de Odontólogos y Estomatólogos de la 1ªRegión.",
+            "Restauración del frente anterior, celebrado en Madrid el día 11 de Noviembre de 2005 y organizado por la Comisión Científica del Ilustre Colegio Oficial de Odontólogos y Estomatólogos de la 1ªRegión.",
+            "Tratado en Odontopediatría (traumatología dental), dictado por los Dres. García Ballesta y Mendoza Mendoza en Madrid el día 27 de Noviembre de 2004.",
+            "I Simposium de Actualización y Nuevas Tendencias en Odontología, impartido el 20 de Noviembre de 2004 en Madrid por el Instituto Tecnológico Europeo de las Ciencias Odontológicas.",
+            "Tratado en Endodoncia, dictado por los Dres. Flores Legasa y García Barbero en Madrid el día 29 de Noviembre de 2003."
+          ]},
+          {"h": "Experiencia"},
+          "Trabajando en Clínicas privadas como Odontólogo general desde Septiembre del 2005:",
+          {"lista": [
+            "Oporden S.L. (Madrid) 2005 – 2006",
+            "Sampro S.L. (Madrid) 2005 -2006",
+            "Clínica Dental Santa Teresa. Colmenar Viejo (Madrid) 2005 – 2006",
+            "Futuredent 3000 S.L. (Málaga) 2006 – 2009",
+            "Clinica Dental Ontiveros. (Marbella) 2006 – 2013",
+            "Clínica Dental Manuel Jiménez Ruiz (Fuengirola) 2010 – 2013",
+            "Sustituciones para la Seguridad Social (INSALUD) 2005-2006"
+          ]}
+        ]
+      },
+      {
+        "id": "juan-manuel-blasco-melguizo",
+        "nombre": "Juan Manuel Blasco Melguizo",
+        "cargo": "Implantología",
+        "img": "/wp-content/uploads/2023/03/juan_manuel_blasco_melguizo.jpg",
+        "bloques": [
+          {"lista": [
+            "Licenciado en Odontología en la Facultad de Odontología de la Universidad de Granada 1994-99.",
+            "Master en Cirugía bucal, Periodoncia e Implantología por la Institución Universitaria Mississippi de Madrid.",
+            "Cursando Doctorado en Universidad Complutense de Madrid en el Departamento de Cirugía.",
+            "Miembro de SEPA desde el año 2001.",
+            "Miembro SECIB (Sociedad Española de Cirugía Bucal) desde el año 1999.",
+            "Miembro de SEI (Sociedad Española de Implantes) desde el año 2001.",
+            "Coloborador de Cursos de Implantes (defcom).",
+            "Publicaciones del título «Alopecia areata de origen dental» en la Revista Española de Cirugía Oral y Maxilofacial, 2001.",
+            "Autor del capítulo Patología de la mucosa oral del libro «Claves diagnósticas en dermatología». Editorial: Formación Alcalá S.L.",
+            "Autor del capítulo «Patología oral en el paciente anciano» del libro «Dermatología geriátrica». Editorial: Formación Alcalá S.L.",
+            "Participación como Profesor/Docente/Autor del curso titulado: «Claves diagnósticas en dermatología».",
+            "Participación como Profesor/Docente/Autor del curso titulado «Dermatología Geriátrica».",
+            "Diploma de participación en el curso «Dolor orofacial y desórdenes Temporo-mandbulares» celebrado en la Facultad de Odontología de Granada el 9 de Junio 1999.",
+            "Diploma de asistencia al curso «V curso teórico-práctico de implantes osteointegrados» celebrado enb Madrid los días 24 y 25 de Marzo del año 2000.",
+            "Diploma de asistencia al «2º Simposio de la Sociedad Española de Cirugía Bucal» celebrado en Santander durante los días 16, 17 y 18 de Mayo de 2002.",
+            "Diploma de asistencia al curso «Actualización y tratamiento en implantología oral» celebrado en el Colegio Oficial de Odontólogos y Estomatólogos de Granada, el día 15 de Mayo de 2009."
+          ]}
+        ]
+      },
+      {
+        "id": "ana-carmen-cabrera-serrano",
+        "nombre": "Ana Carmen Cabrera Serrano",
+        "cargo": "",
+        "img": "/wp-content/uploads/2023/03/ana_cabrera.jpg",
+        "bloques": [
+          {"h": "Formación académica"},
+          {"lista": [
+            "Graduada en Odontología. Promoción 2010-2015. Facultad de Odontología. Universidad de Granada.",
+            "Título en Protección Radiológica Dental. 2015. Facultad de Odontología. Universidad de Granada.",
+            "Trabajo de Investigación. Trabajo Fin de Grado. 2015. *ESTUDIO DE LAS DIFERENCIAS DE LAS MASAS DE INLAYS REALIZADOS EN MODELOS OBTENIDOS CON DIFERENTES TÉCNICAS DE IMPRESIÓN* Dirigido por el profesor y tutor Dr. Jose Manuel Navajas Rodríguez de Mondelo. Facultad de Odontología. Universidad de Granada.",
+            "Técnica Superior en Prótesis Dental. 2008-2010. Prótesis Dental de Rama Sanitaria, en las áreas de Prótesis Removibles Acrílicas y Metálicas, Ortodoncia y Prótesis Fija, impartidos por Escuela Homologada por la Conserjería de Educación de la Junta de Andalucía, con código de centro nº 29701404 - Escuela Superior de Prótesis Dental ADENTA. Málaga."
+          ]},
+          {"h": "Formación continuada"},
+          {"h3": "Cursos de Especialización"},
+          {"lista": [
+            "Curso de Certificación en la Técnica GENIOVA, The Fast Aligner. 1 de Abril de 2016. Málaga.",
+            "Curso Carillas de Porcelana (Teórico). 17 y 18 de Abril de 2015. 8 horas lectivas. Dictante Dr. Sanz Alonso. Córdoba",
+            "Curso de Herramientas Esenciales para conseguir una Estética Predecible. 24 y 25 de Octubre de 2014. 8 horas lectivas. Dictante Dr. Antonio Saiz-Pardo Pinos. Granada.",
+            "Curso de Tratamiento de las Infecciones Cruzadas en la Clínica Odontológica. 27 de Octubre de 2012. Impartido por el Dr. Vicente Lozano. Granada."
+          ]},
+          {"h3": "Jornadas y Symposium"},
+          {"lista": [
+            "IV Jornadas SCOI. Cirugía mucogingival avanzada alrededor de dientes e implantes. Enfoque multidisciplinar. 18 y 19 de Diciembre de 2015. Dictantes: Dr. Pedro J. Lázaro Calvo y Dr. Ramón Gómez Meda. Córdoba.",
+            "XII Jornada de la Asociación Universitaria Valenciana de Blanqueamiento Dental. 25 de Abril de 2015. 10 horas lectivas. Universidad de Odontología. Granada. I Symposium Máster Integral Avanzada Adultos. 2015. Universidad de Odontología. Granada.",
+            "Symposium MIS Ibérica Implantología Dental. 2015. Granada.",
+            "III Jornadas de Implantoprótesis SCOI. 13 de Abril de 2013. 8 horas lectivas. Impartido por el Dr. Galindo Moreno. Granada."
+          ]},
+          {"h3": "Congresos"},
+          {"lista": ["I Congreso Nacional SCOI. 31 de Marzo a 2 de Abril de 2011. 25 horas lectivas. Granada"]}
+        ]
+      },
+      {
+        "id": "eloisa-granados-lara",
+        "nombre": "Eloisa Granados Lara",
+        "cargo": "",
+        "img": "/wp-content/uploads/2023/03/eloisa_granados_lara.jpg",
+        "bloques": [
+          {"h": "Datos académicos"},
+          {"lista": [
+            "Licenciada en Odontología en la Facultad de Odontología de la Universidad de Granada (2001-2006).",
+            "Máster de Odontopediatría en la Facultad de Odontología de la Universidad Complutense de Madrid (2006-2008).",
+            "Diploma de Tratamiento Odontológico en Pacientes Infantiles Bajo Sedación y Anestesia General (Universidad Complutense 2006-2008).",
+            "Diploma de Estudios Avanzados con el trabajo titulado “Predicción del máximo pico de crecimiento puberal en una población de niños saharauis” (Universidad de Granada 2008)."
+          ]},
+          {"h": "Experiencia docente"},
+          {"lista": [
+            "Colaboración como docente durante el curso académico 2006-2007, desarrollando la actividad en el Departamento de Estomatología de la Universidad de Granada, dentro de la Unidad Docente de Odontopediatría.",
+            "Profesora Colaboradora de prácticas de la asignatura de Odontopediatría en la Facultad de Odontología de la Universidad de Granada durante el curso 2008-2009 y 2009-2010.",
+            "Profesora Colaboradora en el Máster de Odontopediatría de la Universidad Complutense de Madrid (2011-actualmente)."
+          ]},
+          {"h": "Colaboración en congresos"},
+          {"lista": [
+            "Colaboración en la organización de las 7ª Jornadas de Encuentro Pediatría-Odontopediatría, celebradas en Madrid el 16 de diciembre de 2006.",
+            "Colaboración en la organización de las 8ª Jornadas de Encuentro Pediatría-Odontopediatría, celebradas en Madrid el 15 de diciembre de 2007."
+          ]},
+          {"h": "Cursos recibidos"},
+          {"lista": [
+            "XI Reunión Nacional de Jóvenes Odontopediatras, celebradas en Madrid el 2 de marzo de 2012.",
+            "I Symposium de la Sociedad Española de Dolor y Disfunción Craneofacial, celebrado en Málaga el día 27 de febrero de 2010.",
+            "Curso Multidisciplinario Dr. Gamborena, celebrado en S. Sebastián del 1 al 6 de febrero de 2010.",
+            "VI Congreso Andaluz de Voluntariado Universitario “Retos del Voluntariado en la Universidad de hoy”, celebrado en Granada los días 6 y 7 noviembre de 2008.",
+            "V Encuentro Multidisciplinar de Odontología Infantil Integrada y Pediatría Extrahospitalaria y Atención Primaria, celebrado en Sevilla el 8 de marzo de 2008.",
+            "VII Reunión Anual de Jóvenes Odontopediatras, celebrada en Madrid el 1 de marzo de 2008.",
+            "9ª Jornadas de Encuentro Pediatría-Odontopediatría, celebradas en Madrid el 10 de enero de 2008.",
+            "Curso “Posturología y Odontología Infantil Integrada”, celebrado en Sevilla el 15 de marzo de 2007.",
+            "Curso “Orden y desorden de la oclusión y su desarrollo”, celebrado en Sevilla el 16 de marzo de 2007.",
+            "Curso “Hábitos nocivos en el niño: enfoques actuales”, celebrado en Sevilla el 17 de marzo de 2007.",
+            "I Congreso Internacional y V Nacional de la Sociedad Española de Odontología Infantil Integrada, celebrado en Sevilla del 14 al 17 de marzo de 2007.",
+            "Curso Monográfico “Odontología Integral en el niño y adolescente”, celebrado en Madrid el 9 de marzo de 2007.",
+            "7ª Jornadas de Encuentro Pediatría-Odontopediatría, celebradas en Madrid el 16 de diciembre de 2006.",
+            "XXVIII Reunión Anual de la Sociedad Española de Odontopediatría, celebrada en Madrid del 17 al 20 de mayo de 2006.",
+            "X Jornadas de Odontoestomatología de la Universidad de Granada, celebradas en Granada los días 3 y 4 de marzo de 2006.",
+            "5ª Jornadas de Encuentro Pediatría-Odontopediatría, celebradas en Madrid el 17 de diciembre de 2005.",
+            "Asistencia a 6 conferencias del Programa de Formación Continuada en Odontoestomatología, celebradas en el Colegio de Odontólogos de Granada durante el curso 2004-2005.",
+            "Curso “Criterios de la endodoncia moderna y recursos terapéuticos”, celebrado en Granada del 28 al 30 de abril de 2005.",
+            "Curso “Nuevas técnicas en implantología”, celebrado en Granada los días 8 y 9 de abril de 2005.",
+            "Curso “Odontología conservadora estética”, celebrado en Granada los días 11 y 12 de marzo de 2005.",
+            "Curso “Ortodoncia práctica: diagnóstico y planificación de casos atípicos”, celebrado en Granada los días 10 y 11 de febrero de 2005.",
+            "VI Symposium de “Actualización en Enfermedades Infecciosas Bucodentales y Cervicofaciales”, celebrado en Granada los días 16 y 17 de abril de 2004."
+          ]},
+          {"h": "Comunicaciones y ponencias presentadas a congresos"},
+          {"lista": [
+            "Ponencia libre titulada “Máscara facial: empleo en odontopediatría”, presentada en la XI Reunión Nacional de Jóvenes Odontopediatras, celebrada en Madrid el 2 de marzo de 2012.",
+            "Ponencia libre titulada “Predicción del pico de crecimiento puberal mediante los estadios de desarrollo dentario en niños saharauis”, presentada en el VI Congreso Nacional de la Sociedad Española de Odontología Infantil Integrada.",
+            "Póster titulado “Salud bucal y embarazo: la importancia de la prevención”, presentado en la XXX Reunión Anual de la Sociedad Española de Odontopediatría, celebrada en Valencia del 1 al 3 de mayo de 2008.",
+            "Ponencia libre titulada “Prevención temprana en Odontopediatría: imprescindible en la actualidad”, presentada en la VII Reunión Anual de Jóvenes Odontopediatras, celebrada en Madrid el 1 de marzo de 2008.",
+            "Ponencia libre titulada “Impactación de incisivos centrales superiores permanentes de etiología traumática”, presentada en el I Congreso Internacional y V Nacional de la Sociedad Española de Odontología Infantil Integrada, celebrado en Sevilla del 14 al 17 de marzo de 2007.",
+            "Ponencia libre titulada “Impactación de incisivos centrales superiores permanentes de diferente etiología. Enfoque terapéutico”, presentada en la 5ª Reunión Nacional de Jóvenes Odontopediatras, celebrada en Madrid el día 17 de mayo de 2006.",
+            "Póster titulado “Diagnóstico radiográfico de alteraciones numéricas y morfométricas dentarias en población infantil saharaui”, presentado en la XXVIII Reunión Nacional de la Sociedad Española de Odontopediatría, celebrada en Madrid del 17 al 20 de mayo de 2006."
+          ]},
+          {"h": "Premios recibidos"},
+          {"lista": ["Premio “Mejor Ponencia Libre” a la ponencia titulada “Impactación de incisivos centrales superiores permanentes de diferente etiología. Enfoque terapéutico”, presentada en la 5ª Reunión Nacional de Jóvenes Odontopediatras, celebrada en Madrid el día 17 de mayo de 2006."]},
+          {"h": "Otros datos"},
+          {"lista": ["Inglés nivel B2 (Escuela Oficial de Idiomas Málaga)"]}
+        ]
+      }
+    ]
+  },
+
+  "instalaciones": {
+    "seo_title": "Instalaciones | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "Instalaciones de Clínica Dental Ontiveros en Marbella: sala de espera, tres gabinetes, esterilización integral y ortopantomógrafo digital.",
+    "hero_img": "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.51-PM-2.jpeg",
+    "eyebrow": "Sobre nosotros",
+    "titulo": "Nuestras Instalaciones",
+    "bloques": [
+      "Las nuevas instalaciones han sido expresamente diseñadas para ofrecerle la mayor comodidad pero sobre todo para estimular sus sentidos.",
+      "La renovada decoración supone una explosión de colores e imágenes que nos hace olvidar por un instante que estamos en una clínica dental.",
+      "La clínica dispone de una acogedora y espaciosa sala de espera además de tres amplios gabinetes.",
+      "La clínica posee un sistema de desinfección y esterilización integral, que garantiza una protección contra posibles enfermedades de contagio mediante la sangre y la saliva (VIH, hepatitis, herpes…):",
+      "limpieza con ultrasonidos, secado, embolsado y sellado del instrumental para su posterior esterilización en autoclave.",
+      "Contamos con un ortopantomógrafo digital para la realización de radiografías panorámicas, que ofrecerán una información más detallada del estado general de la boca. Esta aparatología ofrece varias ventajas:",
+      {"lista": [
+        "Al ser digital supone un ahorro de tiempo importante, al no necesitar revelado",
+        "Reduce considerablemente la exposición del paciente a RX."
+      ]}
+    ],
+    "destacados": [
+      {"icono": "sofa", "titulo": "Sala de espera", "texto": "Acogedora y espaciosa"},
+      {"icono": "chair", "titulo": "3 gabinetes", "texto": "Amplios y renovados"},
+      {"icono": "shield", "titulo": "Esterilización", "texto": "Sistema integral en autoclave"},
+      {"icono": "xray", "titulo": "Radiología digital", "texto": "Ortopantomógrafo digital"}
+    ],
+    "galeria": [
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.51-PM-2.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.52-PM-2.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.56-PM-2.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.55-PM-1.jpeg",
+      "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.49-PM-1.jpeg",
+      "/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-22-at-3.05.21-PM1.jpeg"
+    ]
+  },
+
+  "tratamientos": {
+    "seo_title": "Tratamientos dentales en Marbella | Clínica Dental Ontiveros",
+    "seo_desc": "Ortodoncia invisible, implantes, estética dental, blanqueamiento, periodoncia, prótesis, cirugía, ATM y odontología general en Marbella. Primera visita gratuita.",
+    "hero_img": "/wp-content/uploads/2023/04/dentista-profesional-masculino-guantes-mascara-discutir-como-vera-tratamiento-dientes-paciente.webp",
+    "eyebrow": "Clínica Dental Ontiveros",
+    "titulo": "Tratamientos",
+    "intro": "En Clínica Dental Ontiveros Realizamos los siguientes tratamientos:",
+    "lista": [
+      {
+        "id": "ortodoncia-invisible", "menu": "ortodoncia invisible", "titulo": "Ortodoncia invisible",
+        "subtitulo": "La Ortodoncia Transparente que no se nota",
+        "img": "/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-31-at-11.49.13-AM.jpeg",
+        "galeria": [
+          "/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-31-at-11.49.11-AM.jpeg",
+          "/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-31-at-11.49.12-AM1.jpeg",
+          "/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-31-at-11.49.12-AM.jpeg"
+        ],
+        "bloques": ["La Ortodoncia Invisible es un tratamiento que sirve para mover los dientes a la posición correcta con alineadores transparentes y casi invisibles. La principal ventaja es que son extraíbles y que son fabricados a medida para cualquier tipo de paciente. Se comienza con un juego de alineadores que se va cambiando gradualmente para que los dientes se coloquen gradualmente, al ser extraíbles tienen un plus de comodidad frente a los brackets tradiciones. La Ortodoncia Invisible sin brackets es muy cómoda, extraíble y transparente, los pacientes ya no sufrirán más con los brackets tradicionales. Consulte el tratamiento dental de Ortodoncia Invisible en la Clínica Dental Ontiveros."]
+      },
+      {
+        "id": "odontologia-general", "menu": "Odontología General", "titulo": "Odontología general",
+        "img": "/wp-content/uploads/2023/04/dentista-profesional-masculino-guantes-mascara-discutir-como-vera-tratamiento-dientes-paciente.webp",
+        "bloques": [
+          "Mediante una fase diagnóstica apropiada podemos determinar las necesidades concretas de tu boca para poder llevar a cabo el plan de tratamiento individualizado más apropiado.",
+          "Los tratamientos conservadores reparan los daños causados en la boca mediante empastes, endodoncias y limpiezas que permitirán mantener tus dientes sanos y estéticos durante muchos años evitando así tener que aplicar actuaciones más invasivas.",
+          "Son fundamentales para garantizar una buena salud bucodental:",
+          {"lista": ["La prevención", "El control regular por un profesional", "Buenos hábitos de higiene"]}
+        ]
+      },
+      {
+        "id": "cirugia-general", "menu": "Cirugía general", "titulo": "Cirugía general",
+        "img": "/wp-content/uploads/2023/04/dentista-asistente-cirugia-clinica-dental.webp",
+        "bloques": [
+          "La cirugía es posiblemente la especialidad de la odontología que más miedos y preguntas suscita. En la Clínica Dental Ontiveros nos preciamos de contar con Juan Manuel Blasco, un cirujano de reconocido prestigio que le explicará los detalles de la intervención y resolverá cualquier posible duda.",
+          "Nuestro cirujano maxilofacial resuelve un amplio espectro de problemas: dientes incluidos, quistes, apicectomias, colgajos, elevaciones de seno con hueso, extracciones de cordales (muelas del juicio) incluidas y erupcionadas.",
+          "Haciendo un posterior seguimiento de las distintas operaciones para garantizar la seguridad y tranquilidad de nuestros pacientes"
+        ]
+      },
+      {
+        "id": "estetica-dental", "menu": "Estética dental", "titulo": "Estética dental",
+        "img": "/wp-content/uploads/2023/04/dentista-1.webp",
+        "bloques": [
+          "Esta área de la odontología es una de las que más ha avanzado en los últimos años. Ya no solo se busca resolver un problema o reponer piezas dentales, se trata de devolverle a nuestros pacientes la mejor de su sonrisas y eso se consigue gracias a técnicas como Mock up en donde se crea un diseño de cómo quedará tu sonrisa antes de empezar el tratamiento, lo que supone un efecto motivador para el paciente.",
+          "El objetivo de la Estética Dental es la apariencia natural de los tratamientos odontológicos, es decir que parezcan lo más naturales posible. Con materiales como el circonio, las nuevas porcelanas e innovadores tratamientos de blanqueamiento dental, conseguimos mejorar el aspecto de la sonrisa.",
+          "La utilización de coronas de ORO por electrodeposicion, nos proporciona una gran estética y por las propiedades del mismo, nos dará un pronóstico más favorable para la conservación de los muñones a largo plazo."
+        ]
+      },
+      {
+        "id": "ortodoncia", "menu": "Ortodoncia", "titulo": "Ortodoncia",
+        "subtitulo": "Nuevas formas de conseguir la sonrisa que siempre has buscado",
+        "img": "/wp-content/uploads/2023/04/152.webp",
+        "bloques": [
+          "La ortodoncia es una especialidad de la odontología que se ocupa del diagnóstico, prevención y tratamiento de las malposiciones dentarias así como la deformación de los maxilares.",
+          "Cuando los dientes o las muelas no encajan de forma correcta existe una maloclusión, y ésta, no solo afecta a la estética de la sonrisa al aspecto de la boca, también dificulta la higiene causando caries, problemas de encías y halitosis.",
+          "La Clínica dental DR. Ontiveros se distingue por estar a la vanguardia en implementación de nuevas técnicas y equipamientos odontológicos pudiendo así ofrecer a nuestros pacientes los procedimientos de última generación como:",
+          {"h": "Sistema Damon"},
+          "El Sistema Damon utiliza brackets de autoligado que, combinados con arcos de aleaciones de alta tecnología, ejercen fuerzas ligeras que permiten que el movimiento dentario se más rápido y confortable.",
+          {"h3": "Ventajas:"},
+          {"lista": [
+            "Tratamientos sin extracciones de dientes.",
+            "Movimiento dentario más confortable. Se usa un sistema de sujección pasivo, evitando ejercer fuerzas excesivas que pudiesen producir molestias.",
+            "Movimiento dentario más rápido.",
+            "Citas más cortas.",
+            "Menos casos quirúrgicos.",
+            "Mejoría de la estética facial. Favorece la belleza del rostro al dar más soporte a los tejidos blandos del tercio inferior de la cara de una forma natural, sin necesidad de realizar cirugía estética."
+          ]},
+          "La Ortodoncia Damon cuenta también con Damon Clear, brackets transparentes que no se decoloren ni se tiñen."
+        ]
+      },
+      {
+        "id": "radiologia", "menu": "Radiología", "titulo": "Radiología",
+        "img": "/wp-content/uploads/2023/04/1250.webp",
+        "bloques": [
+          "Todos estos tratamientos van acompañados siempre de los últimos avances en tecnología y aparatología del cuidado dental, adecuándose siempre a las necesidades y demandas del paciente, tal es el caso de la radiovisiografía digital: Esta técnica presenta varias ventajas:",
+          {"h3": "Ventajas:"},
+          {"lista": [
+            "Ahorrará el tiempo y esfuerzo de acudir a un lugar distinto para conseguir una radiografía general que permita un adecuado diagnóstico.",
+            "Posee un sistema de RX que garantiza una emisión de radiación inferior, y por tanto menos dañina para nuestra salud, pues como ya se sabe la radiación que tomamos a lo largo de nuestra vida es acumulativa."
+          ]}
+        ]
+      },
+      {
+        "id": "blanqueamiento", "menu": "Blanqueamiento", "titulo": "Blanqueamientos",
+        "img": "/wp-content/uploads/2023/04/whitening.webp",
+        "bloques": [
+          "El blanqueamiento dental es un tratamiento estético que no provoca abrasión que logra dejar los dientes más blancos, brillantes y saludables. Para ello utilizamos un producto que actúa a través del oxígeno reduciendo varios tonos dentro del mismo color del diente. Asimismo nos permite eliminar las manchas causadas por alimentos, bebidas (café, té, vino tinto), y por determinados medicamentos.",
+          "El blanqueamiento no provoca abrasión (desgaste) en nuestros dientes, y tampoco es posible blanquear empastes anteriores, carillas, fundas o puentes.",
+          "Los resultados dependerán de cada paciente y de su color particular, que será previamente estudiado por el especialista.",
+          "Para una mayor rapidez y efectividad en el tratamiento, utilizamos la lámpara de blanqueamiento Led. Que permite blanquear en una sola sesión de una hora y con menores molestias ya que blanquea ambas arcadas (superior e inferior) al mismo tiempo, lo que hace que el paciente no tenga que permanecer tanto tiempo con la boca abierta."
+        ]
+      },
+      {
+        "id": "periodoncia", "menu": "Periodoncia", "titulo": "Periodoncia",
+        "img": "/wp-content/uploads/2023/04/periodo.jpg",
+        "bloques": [
+          "La periodoncia trata el tejido que rodea al diente y lo une al hueso, cuanto este tejido enferma causa:",
+          {"lista": [
+            "GINGIVITIS: se manifiesta con encías rojas y sangrantes y solo se ve afectada la encía.",
+            "PERIODONTITIS: puede deberse a factores genéticos o ambientales y resulta más delicada por la posibilidad de perder piezas dentarias."
+          ]},
+          "Antes de iniciar un tratamiento es importante hacer un buen diagnóstico clínico para determinar la severidad del problema y así su tratamiento.",
+          {"h3": "¿Qué puede hacerse?"},
+          "En los casos más acentuados, donde una limpieza no es suficiente, es necesario un raspado y alisado periodontales y en algunas ocasiones una cirugía periodontal."
+        ]
+      },
+      {
+        "id": "higiene", "menu": "Higiene", "titulo": "Higiene",
+        "img": "/wp-content/uploads/2023/04/582.webp",
+        "bloques": [
+          "La prevención es fundamental para tener y mantener una boca sana, por eso son aconsejables técnicas de prevención como: limpiezas bucales, al menos una al año, selladores de fosas y fisuras, en dientes sanos para hacer más efectivas las técnicas de cepillado de los niños, fluoraciones …",
+          "Además es conveniente conocer las técnicas correctas de cepillado, pues como se puede demostrar con un pequeño test, en la mayoría de los casos no las conocemos ni practicamos."
+        ]
+      },
+      {
+        "id": "implantes", "menu": "Implantes", "titulo": "Implantes",
+        "img": "/wp-content/uploads/2023/04/hombre-joven.webp",
+        "bloques": [
+          "La implantología es actualmente la técnica en mayor expansión dentro del ámbito odontológico. Mediante los implantes dentales podemos resolver situaciones que hace solo pocos años eran impensables. La manera de sustituir piezas dentales ha cambiado, la aparición de los implantes supone un gran avance, ya que podemos reponer estas sin necesidad de tocar las piezas adyacentes.",
+          "Además de piezas unitarias, también pueden hacerse puentes anclados sobre implantes cuando existe un espacio vació mayor y sobredentaduras que se anclan sobre dos, cuatro o seis implantes (dependiendo de la cantidad de hueso). Aunque en éste último caso la dentadura siga siendo removible, supone una mayor seguridad y comodidad pues además de no moverse, la fuerza que se puede ejercer sobre los alimentos es mayor."
+        ]
+      },
+      {
+        "id": "protesis", "menu": "Prótesis", "titulo": "Prótesis",
+        "img": "/wp-content/uploads/2023/04/Protesis-Dental.webp",
+        "bloques": [
+          "Nuestro objetivo es la satisfacción de nuestros pacientes por eso ponemos a su disposición las técnicas más recientes en reposición de piezas dentales, como prótesis fija, así como prótesis removible.",
+          "<strong>PRÓTESIS FIJA:</strong> en metal porcelana.",
+          "<strong>PROTESIS REMOVIBLE:</strong> aparatos de quita y pon en metales nobles, o en resina de no ser posible hacerlo metálico cuando se trata de personas edentulas (ningún diente).",
+          "<strong>PROTESIS COMBINADAS:</strong> en las que utilizamos junto a la prótesis removible metálica, coronas o fundas de metal-porcelana con unos aditamentos (ataches) que enganchan en ellas sustituyendo los antiestéticos retenedores de metal de los aparatos removibles, de manera que aumenta la naturalidad al no verse retenedores que delaten que se trata de una prótesis."
+        ]
+      },
+      {
+        "id": "atm", "menu": "ATM", "titulo": "ATM - Tratamiento de la articulación temporo mandibular",
+        "img": "/wp-content/uploads/2023/04/jaw.webp",
+        "bloques": [
+          "Existen personas que aprietan fuertemente los dientes durante la noche, a causa de malos hábitos en algunas ocasiones y en otras a causa del estrés acumulado durante el día, este hábito tiene como consecuencia una tensión continuada de la musculatura de la mandíbula que termina derivando en dolores y molestias además del consiguiente desgaste dental, para estas personas llamadas bruxómanos existe férulas de relajación muscular para llevar mientras duermen.",
+          "Para realizar un diagnóstico de la naturaleza exacta del problema, suele ser necesario emplear elementos como modelos de la boca articulados, radiografías de diferentes tipos, ordenadores de análisis de la oclusión , etc.",
+          "La forma que tienen los dientes de contactar entre sí, puede determinar la aparición de molestias, sobre todo al abrir y cerrar la boca porque se sobrecarga más un lado que otro. La dificultad del tratamiento de este tipo de pacientes es mayor cuanto más crónico es el problema."
+        ],
+        "faq": [
+          {"q": "¿En qué consiste el tratamientos para el bruxismo y ATM?", "a": "El éxito del tratamiento pasa por restablecer el equilibrio entre los músculos, dientes y articulaciones. Para ello se utilizan técnicas ortopédicas, ortodóncicas, protésicas y férulas de descarga de distintos tipos."},
+          {"q": "¿Qué son el ronquido y la apnea del sueño?", "a": "Cuando uno duerme los músculos y tejidos de la garganta y boca automáticamente se relajan. La mandíbula y lengua se retraen hacia atrás, aminorando el espacio de apertura entre ellos. El sonido de roncar es realmente un sonido de tejidos vibrando."},
+          {"q": "¿En qué consiste el tratamiento?", "a": "El tratamiento suele consistir en aparatos acrílicos que se colocan en la boca del roncador durante la noche, que evitan el problema mientras se llevan y pueden ser utilizados al dormir durante toda la vida. La férula especial crea un espacio más amplio para que el aire pase sin impedimentos y esa vibración de los tejidos se aminore o no ocurra. Esta férula es cómoda y se usa solo para dormir."}
+        ]
+      }
+    ]
+  },
+
+  "contacto": {
+    "seo_title": "Contacto y cita | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "Pide cita en Clínica Dental Ontiveros: C./ San Bernabé, Edif. Cibeles nº 3, Marbella. Tel. 952 92 43 22 · 640 08 21 01 · info@clinicadentalontiveros.es",
+    "hero_img": "/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-09-at-4.50.56-PM-2.jpeg",
+    "titulo": "Contacto",
+    "form_title": "Pide tu cita",
+    "acepto": "He leído y acepto los términos y condiciones",
+    "rgpd": ""
+  },
+
+  "legal": {
+    "titular": "",
+    "cif": "",
+    "domicilio": "C./ San Bernabé Edif. Cibeles n 3 - 1 dcha. 29603 - Marbella",
+    "email": "info@clinicadentalontiveros.es"
+  }
+}
