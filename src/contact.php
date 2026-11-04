@@ -119,7 +119,12 @@ if ($edad < 3) out(false, 'Revise los datos y vuelva a enviar.', 400);
 if ((int)($_POST['captcha'] ?? -1) !== (int)$p['s']) out(false, 'La suma no es correcta.', 400);
 
 // Datos
-$campo = function ($k, $max) { return mb_substr(trim((string)($_POST[$k] ?? '')), 0, $max); };
+// Recorte seguro en UTF-8 (el servidor puede no tener la extensión mbstring)
+function cortar($s, $max) {
+    if (function_exists('mb_substr')) return mb_substr($s, 0, $max, 'UTF-8');
+    return preg_match('/^.{0,' . (int)$max . '}/su', $s, $m) ? $m[0] : substr($s, 0, $max);
+}
+$campo = function ($k, $max) { return cortar(trim((string)($_POST[$k] ?? '')), $max); };
 $tipo      = ($_POST['tipo'] ?? '') === 'llamada' ? 'llamada' : 'cita';
 $nombre    = $campo('nombre', 80);
 $email     = $campo('email', 160);
