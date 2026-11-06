@@ -596,7 +596,10 @@ def build_tratamientos():
   </div>
 </article>''')
     body = f'''{page_hero(Q["titulo"], e(Q["intro"]), Q["hero_img"], Q["eyebrow"])}
-<div class="chips-bar"><nav class="wrap chips" aria-label="Tratamientos">{chips}</nav></div>
+<div class="chips-bar"><div class="wrap">
+  <button class="tr-pick" type="button" aria-expanded="false" aria-controls="tr-menu"><span class="tr-pick-l">Tratamiento</span><span class="tr-pick-v" data-tr-current>Elige uno de los {len(Q["lista"])}</span><i>{I["plus"]}</i></button>
+  <nav class="chips" id="tr-menu" aria-label="Tratamientos">{chips}</nav>
+</div></div>
 <section class="sec trs"><div class="wrap">
 {"".join(secs)}
 </div></section>

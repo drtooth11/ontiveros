@@ -40,23 +40,30 @@
     if(m){ for(var i=0;i<sel.options.length;i++){ if(sel.options[i].text === m){ sel.selectedIndex = i; break; } } }
   }
 
-  // Tratamientos: marca el tratamiento visible en la barra de accesos
-  var chips = document.querySelectorAll('.chips-bar a');
-  if(chips.length && 'IntersectionObserver' in window){
-    var byId = {}; chips.forEach(function(c){ byId[c.getAttribute('href').slice(1)] = c; });
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if(en.isIntersecting && byId[en.target.id]){
-          chips.forEach(function(c){ c.classList.remove('is-on'); });
-          var c = byId[en.target.id]; c.classList.add('is-on');
-          // centra el botón solo dentro de la barra (nunca mueve la página)
-          var bar = c.parentNode;
-          var x = c.offsetLeft - (bar.clientWidth - c.offsetWidth) / 2;
-          if(bar.scrollTo) bar.scrollTo({left: x, behavior: 'smooth'}); else bar.scrollLeft = x;
-        }
-      });
-    }, {rootMargin:'-40% 0px -55% 0px'});
-    document.querySelectorAll('.tr[id]').forEach(function(s){ io.observe(s); });
+  // Tratamientos: barra de accesos (PC: todos visibles; móvil: botón que despliega la lista)
+  var bar = document.querySelector('.chips-bar');
+  var chips = document.querySelectorAll('.chips-bar .chips a');
+  if(bar && chips.length){
+    var pick = bar.querySelector('.tr-pick');
+    var current = bar.querySelector('[data-tr-current]');
+    var setOpen = function(open){ bar.classList.toggle('is-open', open); if(pick) pick.setAttribute('aria-expanded', open ? 'true' : 'false'); };
+    if(pick) pick.addEventListener('click', function(){ setOpen(!bar.classList.contains('is-open')); });
+    chips.forEach(function(c){ c.addEventListener('click', function(){ setOpen(false); }); });
+    document.addEventListener('click', function(e){ if(!bar.contains(e.target)) setOpen(false); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+    if('IntersectionObserver' in window){
+      var byId = {}; chips.forEach(function(c){ byId[c.getAttribute('href').slice(1)] = c; });
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting && byId[en.target.id]){
+            chips.forEach(function(c){ c.classList.remove('is-on'); c.removeAttribute('aria-current'); });
+            var c = byId[en.target.id]; c.classList.add('is-on'); c.setAttribute('aria-current', 'true');
+            if(current) current.textContent = c.textContent;
+          }
+        });
+      }, {rootMargin:'-40% 0px -55% 0px'});
+      document.querySelectorAll('.tr[id]').forEach(function(s){ io.observe(s); });
+    }
   }
 
   // Mapa: solo se carga (con cookies de Google) si el usuario lo pide
