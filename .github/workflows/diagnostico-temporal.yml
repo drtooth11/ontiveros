@@ -1,0 +1,24 @@
+name: Diagnostico temporal receptor
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probar el token contra los dos receptores
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os, urllib.request, urllib.error, hashlib
+          t = os.environ.get("DEPLOY_TOKEN", "").strip()
+          print(f"::notice::Secreto DEPLOY_TOKEN: {len(t)} caracteres; huella empieza por {hashlib.sha256(t.encode()).hexdigest()[:8]}")
+          for u in ("https://clinicadentalontiveros.es/deploy.php", "https://clinicadentalontiveros.es/web/deploy.php"):
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u + "?action=manifest", headers={"X-Deploy-Token": t, "User-Agent": "ontiveros-deploy"}), timeout=30)
+                  c, b = r.status, r.read()[:120]
+              except urllib.error.HTTPError as e:
+                  c, b = e.code, e.read()[:120]
+              except Exception as e:
+                  c, b = "ERR", str(e)[:120].encode()
+              print(f"::notice::{u} -> {c} {b!r}")
+          PY
