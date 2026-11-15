@@ -261,7 +261,7 @@ def cookiebot_tag():
     if not cb:
         return ""
     return (f'<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{cb}" '
-            f'data-blockingmode="auto" data-culture="{LANG.upper()}" type="text/javascript"></script>\n')
+            f'data-blockingmode="auto" data-culture="{LANG}" type="text/javascript"></script>\n')
 
 def clinic_jsonld():
     d = {
@@ -773,7 +773,7 @@ def build_legal():
         cb = BASE["site"].get("cookiebot_id")
         if key == "cookies" and cb:
             content += (f'\n<h2>{T["cookie_decl"]}</h2>\n<script id="CookieDeclaration" '
-                        f'src="https://consent.cookiebot.com/{cb}/cd.js" data-culture="{LANG.upper()}" type="text/javascript" async></script>\n')
+                        f'src="https://consent.cookiebot.com/{cb}/cd.js" data-culture="{LANG}" type="text/javascript" async></script>\n')
         body = f'''{page_hero(title)}
 <section class="sec"><div class="wrap narrow"><article class="legal">
 {content}
