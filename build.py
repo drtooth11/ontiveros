@@ -134,6 +134,12 @@ I = {
  "wa": '<svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.6.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4z"/></svg>',
 }
 
+# Google Maps: ficha de la clínica (place_id) y mapa incrustado buscando por su nombre en Google
+_MQ = quote(S["maps_nombre"])
+MAPS_FICHA = f"https://www.google.com/maps/search/?api=1&amp;query={_MQ}&amp;query_place_id={S['maps_place_id']}"
+MAPS_RUTA = f"https://www.google.com/maps/dir/?api=1&amp;destination={_MQ}&amp;destination_place_id={S['maps_place_id']}"
+MAPS_EMBED = f"https://maps.google.com/maps?q={_MQ}&amp;ll={S['lat']},{S['lng']}&amp;z=17&amp;hl=es&amp;output=embed"
+
 WA_URL = S["whatsapp"] + "?text=" + quote(S.get("whatsapp_texto", ""))
 CITA = L("contacto") + "#cita"
 
@@ -165,6 +171,8 @@ def clinic_jsonld():
         "address": {"@type": "PostalAddress", "streetAddress": S["calle"], "postalCode": S["cp"],
                     "addressLocality": S["ciudad"], "addressRegion": S["provincia"], "addressCountry": "ES"},
         "areaServed": {"@type": "City", "name": "Marbella"},
+        "geo": {"@type": "GeoCoordinates", "latitude": S["lat"], "longitude": S["lng"]},
+        "hasMap": MAPS_FICHA.replace("&amp;", "&"),
         "medicalSpecialty": "Dentistry",
         "availableService": [{"@type": "MedicalProcedure", "name": t["titulo"]} for t in C["tratamientos"]["lista"]],
         "contactPoint": [{"@type": "ContactPoint", "telephone": S["tel1_href"], "contactType": "customer service",
@@ -384,15 +392,15 @@ def callback_form():
 </form>'''
 
 def map_box():
-    q = quote(S["maps_q"])
-    return f'''<div class="map" data-map="https://maps.google.com/maps?q={q}&amp;z=17&amp;output=embed">
+    return f'''<div class="map" data-map="{MAPS_EMBED}">
   <div class="map-ph">
     {I["pin"]}
     <p class="map-addr">{e(S["address"])}</p>
     <p class="map-note">El mapa lo sirve Google y puede usar cookies de terceros.</p>
     <div class="map-actions">
       <button class="btn btn-primary btn-sm" type="button" data-map-load>Ver mapa</button>
-      <a class="btn btn-ghost btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+      <a class="btn btn-ghost btn-sm" href="{MAPS_RUTA}" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+      <a class="btn btn-ghost btn-sm" href="{MAPS_FICHA}" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
     </div>
   </div>
 </div>'''
@@ -428,7 +436,7 @@ def build_home():
   <a class="qk" href="tel:{S["tel1_href"]}"><i>{I["phone"]}</i><span><strong>Llámanos</strong>{S["tel1"]}</span></a>
   <button class="qk" type="button" data-open-callback aria-expanded="false" aria-controls="cb-panel"><i>{I["callback"]}</i><span><strong>Te llamamos</strong>Déjanos tu teléfono y nos pondremos en contacto contigo.</span></button>
   <a class="qk" href="mailto:{S["email"]}"><i>{I["mail"]}</i><span><strong>Escríbenos</strong>{S["email"]}</span></a>
-  <a class="qk" href="https://www.google.com/maps/search/?api=1&amp;query={quote(S["maps_q"])}" target="_blank" rel="noopener noreferrer"><i>{I["pin"]}</i><span><strong>Visítanos</strong>{e(S["address"])}</span></a>
+  <a class="qk" href="{MAPS_FICHA}" target="_blank" rel="noopener noreferrer"><i>{I["pin"]}</i><span><strong>Visítanos</strong>{e(S["address"])}</span></a>
   <div class="cb-panel" id="cb-panel" hidden>{callback_form()}</div>
 </div></section>
 

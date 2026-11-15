@@ -19,7 +19,10 @@
     "cp": "29603",
     "ciudad": "Marbella",
     "provincia": "Málaga",
-    "maps_q": "Calle San Bernabé Edificio Cibeles 3 29603 Marbella",
+    "maps_nombre": "Clinica Dental Ontiveros, Marbella",
+    "maps_place_id": "ChIJlx2Esg7Ycg0RKBD6yYXjydY",
+    "lat": 36.5156526,
+    "lng": -4.8790155,
     "horario": [],
     "google_reviews": "",
     "fundacion": "2001"
