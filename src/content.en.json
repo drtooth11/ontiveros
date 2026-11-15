@@ -1,0 +1,434 @@
+{
+  "site": {
+    "whatsapp_texto": "Hello, I am writing from the Clínica Dental Ontiveros website. I would like to book an appointment."
+  },
+
+  "home": {
+    "seo_title": "Clínica Dental Ontiveros | Dentist in Marbella since 2001",
+    "seo_desc": "Dental clinic in Marbella: general dentistry, invisible orthodontics, implants, cosmetic dentistry and whitening. Free first visit. Tel. +34 952 92 43 22.",
+    "hero_eyebrow": "Clínica Dental Ontiveros",
+    "hero_title": "Discover your best smile",
+    "intro_eyebrow": "Clínica Dental Ontiveros",
+    "intro_title": "Your trusted dentist",
+    "intro": [
+      "At Clínica Dental Ontiveros we show you new ways to achieve the smile you have always wanted.",
+      "Our medical team will welcome you with open arms, study your case and offer you the solution that best suits your needs."
+    ],
+    "servicios_title": "We care about your smile and your health",
+    "servicios_sub": "Free advice with no obligation",
+    "servicios": [
+      {"titulo": "General dentistry", "texto": "Through an appropriate diagnostic phase we can determine the specific needs of your mouth in order to .."},
+      {"titulo": "Whitening", "texto": "Tooth whitening is a non-abrasive cosmetic treatment that leaves teeth whiter, brighter and healthier."},
+      {"titulo": "Implants", "texto": "Implantology is currently the fastest-growing technique in dentistry."},
+      {"titulo": "Prosthetics", "texto": "The speciality that protects or replaces lost teeth, either on remaining natural teeth or on implants .."},
+      {"titulo": "General surgery", "texto": "Tooth whitening is a non-abrasive cosmetic treatment that leaves teeth whiter, brighter and healthier."},
+      {"titulo": "Cosmetic dentistry", "texto": "This area of dentistry is one of those that has advanced the most in recent years. It is no longer just about solving a problem or replacing teeth.."}
+    ],
+    "visita_title": "Free first visit",
+    "visita": [
+      "Sounds good, doesn't it? Book an appointment at our dental clinic and your first consultation will be completely free. You will receive 100% personalised care from the best professionals in dentistry and cosmetic dentistry.",
+      "We will carry out a thorough examination to give you a personalised diagnosis and assess the treatment that best suits your needs, improving your oral health and the appearance of your smile.",
+      "The first visit includes a free treatment plan and you will leave the clinic with a detailed quote. Come and see us at Clínica Dental Ontiveros!"
+    ],
+    "opiniones_title": "What do our patients say?",
+    "opiniones": [
+      "... For health, value for money, kind treatment, excellent professional qualifications and top-quality materials and results, I recommend Clínica Dental Ontiveros 100%!!!",
+      "I am having orthodontic treatment because of a TMJ problem. I am very happy with the results I am getting and the professional care is excellent.",
+      "I love my dentist. The dental cleaning was quick and painless, and I noticed a change in my gums from the very first session. They are an excellent team of professionals."
+    ],
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {"q": "Which is more expensive, braces or clear aligners?", "a": "You may be wondering which is more expensive: braces or aligners? Although some orthodontic techniques and treatments can be quite costly, the average price of traditional braces is usually higher than that of invisible aligners. However, bear in mind that the final cost of your orthodontic treatment will depend on several factors, such as the severity of your case, the type of braces or aligners you choose and the length of your treatment."},
+      {"q": "Which is better, invisible orthodontics or braces?", "a": "It is a question orthodontists hear often: which is better, invisible orthodontics or braces? In terms of effectiveness, both treatments work. However, a professional orthodontist should recommend one or the other for each patient. Invisible orthodontics is usually recommended for mild and moderate cases, while braces are useful in more severe cases."},
+      {"q": "What happens if you don't wear your aligners for 22 hours a day?", "a": "Because aligners are removed, they do not act on your teeth while they are not being worn. So they must be worn for the number of hours a day prescribed by the orthodontist."}
+    ]
+  },
+
+  "quienes": {
+    "seo_title": "About us | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "Dental clinic in Marbella specialising in comprehensive dental treatment since 2001. Discover our values and our team of specialists.",
+    "eyebrow": "About us",
+    "titulo": "Experience and commitment",
+    "texto": [
+      "Clínica Dental Ontiveros specialises in comprehensive dental treatment. Located in Marbella, in the heart of the Costa del Sol, it opened its doors in 2001 and since then its highest aim has been patient satisfaction."
+    ],
+    "cifras": [
+      {"texto": "Years of experience"},
+      {"texto": "Cases with Ontiveros Aligners"},
+      {"texto": "Years of Invisalign invisible orthodontics"}
+    ],
+    "valores_title": "What can you expect from us?",
+    "valores_sub": "Free advice with no obligation",
+    "valores": [
+      {"titulo": "Excellence", "texto": "A team of specialists in every area of dentistry who guarantee the best care for your dental health."},
+      {"titulo": "Transparency", "texto": "We adapt to your needs and look for the best option for you; honesty is our hallmark."},
+      {"titulo": "Agility", "texto": "Multiple treatment alternatives. New techniques appear every day and we are committed to offering them to you."},
+      {"titulo": "Positivity", "texto": "A different kind of clinic, with a comfortable, relaxed atmosphere that makes visiting your dentist a more positive experience."}
+    ],
+    "queremos_title": "What do we want?",
+    "queremos": [
+      "We want to be a reference for those looking for professionalism and a personal touch.",
+      "We want to focus on prevention, that is, acting before problems appear.",
+      "We want to always offer you the latest technological advances, which is why our professionals are in continuous training.",
+      "We want our patients' satisfaction to be our best guarantee."
+    ],
+    "equipo_eyebrow": "Medical team",
+    "equipo_title": "Meet our team",
+    "equipo_texto": [
+      "When it comes to dental care you should always be in the hands of professionals. That is why we have the best medical team, made up of qualified specialists in general dentistry, implants, surgery, orthodontics, paediatric dentistry and endodontics.",
+      "They all work as an interdisciplinary team and, together with our dental assistants, will study your case and prepare a personalised quote according to your needs and the treatment you require."
+    ],
+    "equipo": [
+      {"cargo": "General dentistry and orthodontics", "resumen": "Degree in Dentistry. University of Granada…"},
+      {"cargo": "Implantology", "resumen": "Degree in Dentistry from the Faculty of Dentistry of the University of Granada…"},
+      {"cargo": "Dental assistant"},
+      {"cargo": "Endodontics specialist"},
+      {"cargo": "Receptionist"}
+    ],
+    "cta_title": "Get in touch",
+    "cta_sub": "We want to look after your oral health!"
+  },
+
+  "equipo_medico": {
+    "seo_title": "Medical team | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "CVs of the dentists at Clínica Dental Ontiveros in Marbella: orthodontics, implantology, oral surgery, periodontics and paediatric dentistry.",
+    "titulo": "Medical team",
+    "doctores": [
+      {
+        "cargo": "General dentistry and orthodontics",
+        "bloques": [
+          {"lista": [
+            "Degree in Dentistry. University of Granada, 1994-1999",
+            "Specialist in Orthodontics and Dentofacial Orthopaedics. Dr Morales, 2002-2003",
+            "Master's in the Damon Technique. Dr Ceballos, 2008-2009",
+            "Certified in the Invisalign Technique",
+            "Master's in the Invisalign System. Dr Malagón and Dr Peydro",
+            "Expert in Dental Clinic Management and Health Resources. University of Seville, 2012-2013",
+            "Exclusive orthodontist at dental clinics in Estepona and Sabinillas",
+            "2D Lingual Orthodontics, Forestadent",
+            "New technologies in orthodontics. Carriere System. Dr Camon",
+            "Lectures: “Emergencies in the dental clinic” and “Patient satisfaction in a dental clinic”"
+          ]}
+        ]
+      },
+      {
+        "cargo": "",
+        "bloques": [
+          {"lista": ["Degree in Dentistry from the European University of Madrid (UEM), 2000-2005."]},
+          {"h": "Further training"},
+          {"lista": [
+            "University Diploma in Periodontics, organised by the Continuing Education Unit of the Faculty of Dentistry, Complutense University of Madrid. May to November 2006.",
+            "Clinical Specialisation Course in Endodontics (2005–2006 academic year), taught by Drs Stambolsky Guelfand and Rodríguez Benítez at the Ateneo de Postgrado Odontológico (Madrid).",
+            "Advanced Endodontics Course: Retreatment and Periapical Surgery, Málaga, 19 and 20 October 2012.",
+            "Course in Orthodontics and Dentofacial Orthopaedics, Medical Corps Orthodontics, Málaga 2009, 160 hours, taught by Drs Fernando Morales and Cortázar López.",
+            "2D Lingual Technique Course, taught by Dr Viviana Gallardo, Málaga, March 2011.",
+            "Biomet 3i Iberian Symposium “Technological Advances and Clinical Revolution”, Madrid, 15, 16 and 17 January 2009.",
+            "Course on common oral lesions in clinical practice, taught by Dr Rodríguez Archilla, Málaga, October 2008.",
+            "Restoration of the anterior sector with composites, taught by Dr Autrán Mateu, Málaga, November 2007.",
+            "New Advances in Implantology, Málaga, 1 and 2 June 2007.",
+            "Integration of Implants in Cutting-edge Restorative Dentistry, Málaga, May 2007.",
+            "National Oral Cancer Prevention Campaign, Málaga, March 2007.",
+            "The Impacted Third Molar: Diagnosis and Treatment in Clinical Practice, taught by Drs Romero Ruiz and Gutiérrez Pérez, Málaga, 23 and 24 June 2006.",
+            "Theoretical update course in oral surgery and implantology, Madrid, 5 and 6 May 2006.",
+            "Tooth Whitening Course, taught by Drs Forner Navarro and Llena Puy, Guadalajara, 3 and 4 March 2006.",
+            "4th Implantology Update Conference (State of the art in implantology), held at the Official College of Physicians of Madrid, 10 and 11 February 2006.",
+            "Course on running dental radiodiagnosis facilities, Madrid, 18 to 20 January 2006, Instituto de Formación Científica y Tecnológica.",
+            "Treatment of aesthetic problems with periodontal involvement, Madrid, 2 December 2005, organised by the Scientific Committee of the Official College of Dentists and Stomatologists of the 1st Region.",
+            "Restoration of the anterior teeth, Madrid, 11 November 2005, organised by the Scientific Committee of the Official College of Dentists and Stomatologists of the 1st Region.",
+            "Treatise on Paediatric Dentistry (dental trauma), taught by Drs García Ballesta and Mendoza Mendoza, Madrid, 27 November 2004.",
+            "1st Symposium on Updates and New Trends in Dentistry, Madrid, 20 November 2004, Instituto Tecnológico Europeo de las Ciencias Odontológicas.",
+            "Treatise on Endodontics, taught by Drs Flores Legasa and García Barbero, Madrid, 29 November 2003."
+          ]},
+          {"h": "Experience"},
+          "Working in private clinics as a general dentist since September 2005:",
+          {"lista": [
+            "Oporden S.L. (Madrid) 2005 – 2006",
+            "Sampro S.L. (Madrid) 2005 – 2006",
+            "Clínica Dental Santa Teresa, Colmenar Viejo (Madrid) 2005 – 2006",
+            "Futuredent 3000 S.L. (Málaga) 2006 – 2009",
+            "Clínica Dental Ontiveros (Marbella) 2006 – 2013",
+            "Clínica Dental Manuel Jiménez Ruiz (Fuengirola) 2010 – 2013",
+            "Locum work for the Spanish public health service (INSALUD) 2005-2006"
+          ]}
+        ]
+      },
+      {
+        "cargo": "Implantology",
+        "bloques": [
+          {"lista": [
+            "Degree in Dentistry from the Faculty of Dentistry of the University of Granada, 1994-99.",
+            "Master's in Oral Surgery, Periodontics and Implantology from the Institución Universitaria Mississippi, Madrid.",
+            "Currently completing a PhD at the Department of Surgery, Complutense University of Madrid.",
+            "Member of SEPA (Spanish Society of Periodontology) since 2001.",
+            "Member of SECIB (Spanish Society of Oral Surgery) since 1999.",
+            "Member of SEI (Spanish Society of Implants) since 2001.",
+            "Collaborator on implant courses (defcom).",
+            "Published “Alopecia areata of dental origin” in the Revista Española de Cirugía Oral y Maxilofacial, 2001.",
+            "Author of the chapter on oral mucosa pathology in the book “Claves diagnósticas en dermatología”. Publisher: Formación Alcalá S.L.",
+            "Author of the chapter “Oral pathology in elderly patients” in the book “Dermatología geriátrica”. Publisher: Formación Alcalá S.L.",
+            "Lecturer and author on the course “Claves diagnósticas en dermatología”.",
+            "Lecturer and author on the course “Dermatología Geriátrica”.",
+            "Diploma for the course “Orofacial pain and temporomandibular disorders”, Faculty of Dentistry, Granada, 9 June 1999.",
+            "Diploma for the “5th theoretical and practical course on osseointegrated implants”, Madrid, 24 and 25 March 2000.",
+            "Diploma for the “2nd Symposium of the Spanish Society of Oral Surgery”, Santander, 16, 17 and 18 May 2002.",
+            "Diploma for the course “Update and treatment in oral implantology”, Official College of Dentists and Stomatologists of Granada, 15 May 2009."
+          ]}
+        ]
+      },
+      {
+        "cargo": "",
+        "bloques": [
+          {"h": "Academic training"},
+          {"lista": [
+            "Degree in Dentistry, class of 2010-2015. Faculty of Dentistry, University of Granada.",
+            "Certificate in Dental Radiation Protection, 2015. Faculty of Dentistry, University of Granada.",
+            "Research project (final degree project), 2015: *A study of the differences in the mass of inlays made on models obtained with different impression techniques*, supervised by Dr José Manuel Navajas Rodríguez de Mondelo. Faculty of Dentistry, University of Granada.",
+            "Higher Technician in Dental Prosthetics, 2008-2010: removable acrylic and metal prostheses, orthodontics and fixed prostheses, at a school accredited by the Andalusian Regional Ministry of Education (centre code 29701404) – Escuela Superior de Prótesis Dental ADENTA, Málaga."
+          ]},
+          {"h": "Continuing education"},
+          {"h3": "Specialisation courses"},
+          {"lista": [
+            "Certification Course in the GENIOVA Technique, The Fast Aligner. 1 April 2016, Málaga.",
+            "Porcelain Veneers Course (theory). 17 and 18 April 2015, 8 teaching hours, taught by Dr Sanz Alonso, Córdoba.",
+            "Essential Tools for Predictable Aesthetics. 24 and 25 October 2014, 8 teaching hours, taught by Dr Antonio Saiz-Pardo Pinos, Granada.",
+            "Course on the Treatment of Cross-infection in the Dental Clinic. 27 October 2012, taught by Dr Vicente Lozano, Granada."
+          ]},
+          {"h3": "Conferences and symposia"},
+          {"lista": [
+            "4th SCOI Conference: Advanced mucogingival surgery around teeth and implants, a multidisciplinary approach. 18 and 19 December 2015. Speakers: Dr Pedro J. Lázaro Calvo and Dr Ramón Gómez Meda, Córdoba.",
+            "12th Conference of the Valencian University Association of Tooth Whitening. 25 April 2015, 10 teaching hours, Faculty of Dentistry, Granada. 1st Symposium of the Advanced Comprehensive Adult Dentistry Master's, 2015, Faculty of Dentistry, Granada.",
+            "MIS Ibérica Dental Implantology Symposium, 2015, Granada.",
+            "3rd SCOI Implant Prosthetics Conference. 13 April 2013, 8 teaching hours, taught by Dr Galindo Moreno, Granada."
+          ]},
+          {"h3": "Congresses"},
+          {"lista": ["1st SCOI National Congress. 31 March to 2 April 2011, 25 teaching hours, Granada."]}
+        ]
+      },
+      {
+        "cargo": "",
+        "bloques": [
+          {"h": "Academic background"},
+          {"lista": [
+            "Degree in Dentistry from the Faculty of Dentistry, University of Granada (2001-2006).",
+            "Master's in Paediatric Dentistry, Faculty of Dentistry, Complutense University of Madrid (2006-2008).",
+            "Diploma in Dental Treatment of Children under Sedation and General Anaesthesia (Complutense University, 2006-2008).",
+            "Diploma of Advanced Studies with the thesis “Prediction of the pubertal growth peak in a population of Saharawi children” (University of Granada, 2008)."
+          ]},
+          {"h": "Teaching experience"},
+          {"lista": [
+            "Teaching collaborator in the 2006-2007 academic year at the Department of Stomatology, University of Granada, in the Paediatric Dentistry Teaching Unit.",
+            "Clinical teaching collaborator in Paediatric Dentistry at the Faculty of Dentistry, University of Granada, in 2008-2009 and 2009-2010.",
+            "Teaching collaborator on the Master's in Paediatric Dentistry, Complutense University of Madrid (2011-present)."
+          ]},
+          {"h": "Conference organisation"},
+          {"lista": [
+            "Co-organiser of the 7th Paediatrics-Paediatric Dentistry Meeting, Madrid, 16 December 2006.",
+            "Co-organiser of the 8th Paediatrics-Paediatric Dentistry Meeting, Madrid, 15 December 2007."
+          ]},
+          {"h": "Courses attended"},
+          {"lista": [
+            "11th National Meeting of Young Paediatric Dentists, Madrid, 2 March 2012.",
+            "1st Symposium of the Spanish Society of Craniofacial Pain and Dysfunction, Málaga, 27 February 2010.",
+            "Dr Gamborena Multidisciplinary Course, San Sebastián, 1 to 6 February 2010.",
+            "6th Andalusian Congress of University Volunteering “Challenges of volunteering at today's university”, Granada, 6 and 7 November 2008.",
+            "5th Multidisciplinary Meeting on Integrated Paediatric Dentistry, Out-of-hospital Paediatrics and Primary Care, Seville, 8 March 2008.",
+            "7th Annual Meeting of Young Paediatric Dentists, Madrid, 1 March 2008.",
+            "9th Paediatrics-Paediatric Dentistry Meeting, Madrid, 10 January 2008.",
+            "Course “Posturology and integrated paediatric dentistry”, Seville, 15 March 2007.",
+            "Course “Order and disorder of occlusion and its development”, Seville, 16 March 2007.",
+            "Course “Harmful habits in children: current approaches”, Seville, 17 March 2007.",
+            "1st International and 5th National Congress of the Spanish Society of Integrated Paediatric Dentistry, Seville, 14 to 17 March 2007.",
+            "Monographic course “Comprehensive dentistry for children and adolescents”, Madrid, 9 March 2007.",
+            "7th Paediatrics-Paediatric Dentistry Meeting, Madrid, 16 December 2006.",
+            "28th Annual Meeting of the Spanish Society of Paediatric Dentistry, Madrid, 17 to 20 May 2006.",
+            "10th Stomatology Conference of the University of Granada, Granada, 3 and 4 March 2006.",
+            "5th Paediatrics-Paediatric Dentistry Meeting, Madrid, 17 December 2005.",
+            "Attendance at 6 lectures of the Continuing Education Programme in Stomatology, College of Dentists of Granada, 2004-2005.",
+            "Course “Criteria of modern endodontics and therapeutic resources”, Granada, 28 to 30 April 2005.",
+            "Course “New techniques in implantology”, Granada, 8 and 9 April 2005.",
+            "Course “Conservative aesthetic dentistry”, Granada, 11 and 12 March 2005.",
+            "Course “Practical orthodontics: diagnosis and planning of atypical cases”, Granada, 10 and 11 February 2005.",
+            "6th Symposium “Update on Oral, Dental and Cervicofacial Infectious Diseases”, Granada, 16 and 17 April 2004."
+          ]},
+          {"h": "Papers and presentations at congresses"},
+          {"lista": [
+            "Paper “Facial mask: use in paediatric dentistry”, presented at the 11th National Meeting of Young Paediatric Dentists, Madrid, 2 March 2012.",
+            "Paper “Prediction of the pubertal growth peak using dental development stages in Saharawi children”, presented at the 6th National Congress of the Spanish Society of Integrated Paediatric Dentistry.",
+            "Poster “Oral health and pregnancy: the importance of prevention”, presented at the 30th Annual Meeting of the Spanish Society of Paediatric Dentistry, Valencia, 1 to 3 May 2008.",
+            "Paper “Early prevention in paediatric dentistry: essential today”, presented at the 7th Annual Meeting of Young Paediatric Dentists, Madrid, 1 March 2008.",
+            "Paper “Impaction of permanent upper central incisors of traumatic aetiology”, presented at the 1st International and 5th National Congress of the Spanish Society of Integrated Paediatric Dentistry, Seville, 14 to 17 March 2007.",
+            "Paper “Impaction of permanent upper central incisors of different aetiology. Therapeutic approach”, presented at the 5th National Meeting of Young Paediatric Dentists, Madrid, 17 May 2006.",
+            "Poster “Radiographic diagnosis of numerical and morphometric dental anomalies in Saharawi children”, presented at the 28th National Meeting of the Spanish Society of Paediatric Dentistry, Madrid, 17 to 20 May 2006."
+          ]},
+          {"h": "Awards"},
+          {"lista": ["“Best Free Paper” award for “Impaction of permanent upper central incisors of different aetiology. Therapeutic approach”, presented at the 5th National Meeting of Young Paediatric Dentists, Madrid, 17 May 2006."]},
+          {"h": "Other"},
+          {"lista": ["English, B2 level (Official School of Languages, Málaga)"]}
+        ]
+      }
+    ]
+  },
+
+  "instalaciones": {
+    "seo_title": "Facilities | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "Facilities at Clínica Dental Ontiveros in Marbella: waiting room, three treatment rooms, full sterilisation and a digital panoramic X-ray unit.",
+    "eyebrow": "About us",
+    "titulo": "Our facilities",
+    "bloques": [
+      "Our new facilities have been specially designed to offer you maximum comfort and, above all, to stimulate your senses.",
+      "The refurbished decor is an explosion of colours and images that makes you forget for a moment that you are in a dental clinic.",
+      "The clinic has a welcoming, spacious waiting room and three large treatment rooms.",
+      "The clinic has a comprehensive disinfection and sterilisation system that guarantees protection against diseases transmitted through blood and saliva (HIV, hepatitis, herpes…):",
+      "ultrasonic cleaning, drying, bagging and sealing of instruments before sterilisation in an autoclave.",
+      "We have a digital orthopantomograph for panoramic X-rays, which give more detailed information about the general condition of the mouth. This equipment has several advantages:",
+      {"lista": [
+        "Being digital, it saves a great deal of time, as no developing is needed",
+        "It considerably reduces the patient's exposure to X-rays."
+      ]}
+    ],
+    "destacados": [
+      {"titulo": "Waiting room", "texto": "Welcoming and spacious"},
+      {"titulo": "3 treatment rooms", "texto": "Large and refurbished"},
+      {"titulo": "Sterilisation", "texto": "Full autoclave system"},
+      {"titulo": "Digital radiology", "texto": "Digital orthopantomograph"}
+    ]
+  },
+
+  "tratamientos": {
+    "seo_title": "Dental treatments in Marbella | Clínica Dental Ontiveros",
+    "seo_desc": "Invisible orthodontics, implants, cosmetic dentistry, whitening, periodontics, prosthetics, surgery, TMJ and general dentistry in Marbella. Free first visit.",
+    "eyebrow": "Clínica Dental Ontiveros",
+    "titulo": "Treatments",
+    "intro": "At Clínica Dental Ontiveros we offer the following treatments:",
+    "lista": [
+      {
+        "menu": "Invisible orthodontics", "titulo": "Invisible orthodontics",
+        "subtitulo": "Clear orthodontics that nobody notices",
+        "bloques": ["Invisible orthodontics is a treatment that moves teeth into the correct position using clear, almost invisible aligners. Their main advantage is that they are removable and custom-made for any type of patient. Treatment starts with a set of aligners that is changed progressively so that the teeth move gradually into place; being removable, they are far more comfortable than traditional braces. Invisible orthodontics without brackets is very comfortable, removable and transparent, so patients no longer have to put up with traditional braces. Ask about invisible orthodontic treatment at Clínica Dental Ontiveros."]
+      },
+      {
+        "menu": "General dentistry", "titulo": "General dentistry",
+        "bloques": [
+          "Through an appropriate diagnostic phase we can determine the specific needs of your mouth in order to carry out the most suitable individual treatment plan.",
+          "Conservative treatments repair damage in the mouth through fillings, root canals and cleanings, keeping your teeth healthy and attractive for many years and avoiding more invasive procedures.",
+          "The keys to good oral health are:",
+          {"lista": ["Prevention", "Regular check-ups with a professional", "Good hygiene habits"]}
+        ]
+      },
+      {
+        "menu": "General surgery", "titulo": "General surgery",
+        "bloques": [
+          "Surgery is possibly the dental speciality that raises the most fears and questions. At Clínica Dental Ontiveros we are proud to have Juan Manuel Blasco, a highly regarded surgeon who will explain the details of the procedure and answer any questions you may have.",
+          "Our maxillofacial surgeon treats a wide range of problems: impacted teeth, cysts, apicoectomies, flaps, sinus lifts with bone grafts, and extraction of impacted and erupted wisdom teeth.",
+          "Each operation is followed up afterwards to guarantee our patients' safety and peace of mind."
+        ]
+      },
+      {
+        "menu": "Cosmetic dentistry", "titulo": "Cosmetic dentistry",
+        "bloques": [
+          "This area of dentistry is one of those that has advanced the most in recent years. It is no longer just about solving a problem or replacing teeth; it is about giving our patients back their best smile, which we achieve with techniques such as the mock-up, a preview of how your smile will look before treatment begins, which is very motivating for the patient.",
+          "The aim of cosmetic dentistry is a natural look, so that dental work looks as natural as possible. With materials such as zirconia, new porcelains and innovative tooth whitening treatments, we improve the appearance of your smile.",
+          "Electroformed GOLD crowns offer excellent aesthetics and, thanks to the properties of gold, a better long-term prognosis for preserving the prepared teeth."
+        ]
+      },
+      {
+        "menu": "Orthodontics", "titulo": "Orthodontics",
+        "subtitulo": "New ways to achieve the smile you have always wanted",
+        "bloques": [
+          "Orthodontics is the dental speciality concerned with the diagnosis, prevention and treatment of misaligned teeth and jaw deformities.",
+          "When the teeth do not fit together correctly there is a malocclusion, which not only affects the look of your smile and mouth but also makes oral hygiene harder, causing tooth decay, gum problems and bad breath.",
+          "Clínica Dental Dr. Ontiveros stands out for being at the forefront of new dental techniques and equipment, so we can offer our patients the latest procedures, such as:",
+          {"h": "Damon System"},
+          "The Damon System uses self-ligating brackets that, combined with high-tech alloy archwires, apply light forces so that tooth movement is faster and more comfortable.",
+          {"h3": "Advantages:"},
+          {"lista": [
+            "Treatment without tooth extractions.",
+            "More comfortable tooth movement. A passive ligation system avoids excessive forces that could cause discomfort.",
+            "Faster tooth movement.",
+            "Shorter appointments.",
+            "Fewer surgical cases.",
+            "Improved facial aesthetics. It enhances the face by giving more natural support to the soft tissues of the lower third of the face, without cosmetic surgery."
+          ]},
+          "Damon orthodontics also offers Damon Clear, transparent brackets that do not discolour or stain."
+        ]
+      },
+      {
+        "menu": "Radiology", "titulo": "Radiology",
+        "bloques": [
+          "All these treatments are always supported by the latest advances in dental technology and equipment, adapted to each patient's needs, as is the case with digital radiovisiography. This technique has several advantages:",
+          {"h3": "Advantages:"},
+          {"lista": [
+            "It saves you the time and effort of going elsewhere for a general X-ray to obtain a proper diagnosis.",
+            "Its X-ray system emits less radiation, which is therefore less harmful to your health, as the radiation we receive over our lifetime is cumulative."
+          ]}
+        ]
+      },
+      {
+        "menu": "Whitening", "titulo": "Tooth whitening",
+        "bloques": [
+          "Tooth whitening is a non-abrasive cosmetic treatment that leaves teeth whiter, brighter and healthier. We use a product that works through oxygen, lightening the tooth by several shades within its own colour. It also removes stains caused by food, drinks (coffee, tea, red wine) and certain medicines.",
+          "Whitening does not cause abrasion (wear) of the teeth, and it is not possible to whiten existing fillings, veneers, crowns or bridges.",
+          "Results depend on each patient and their particular tooth colour, which the specialist will assess beforehand.",
+          "For faster and more effective treatment we use an LED whitening lamp. It whitens in a single one-hour session with less discomfort, as it treats both arches (upper and lower) at the same time, so the patient does not have to keep their mouth open for as long."
+        ]
+      },
+      {
+        "menu": "Periodontics", "titulo": "Periodontics",
+        "bloques": [
+          "Periodontics treats the tissue that surrounds the tooth and attaches it to the bone. When this tissue becomes diseased it causes:",
+          {"lista": [
+            "GINGIVITIS: red, bleeding gums; only the gum is affected.",
+            "PERIODONTITIS: may be due to genetic or environmental factors and is more serious because teeth may be lost."
+          ]},
+          "Before starting treatment it is important to make a good clinical diagnosis to determine how severe the problem is and how to treat it.",
+          {"h3": "What can be done?"},
+          "In more advanced cases, where a cleaning is not enough, periodontal scaling and root planing is needed and sometimes periodontal surgery."
+        ]
+      },
+      {
+        "menu": "Hygiene", "titulo": "Hygiene",
+        "bloques": [
+          "Prevention is essential to have and keep a healthy mouth, which is why preventive measures are recommended: dental cleanings at least once a year, pit and fissure sealants on healthy teeth to make children's brushing more effective, fluoride treatments…",
+          "It is also important to know the correct brushing techniques since, as a short test can show, most of us neither know nor practise them."
+        ]
+      },
+      {
+        "menu": "Implants", "titulo": "Implants",
+        "bloques": [
+          "Implantology is currently the fastest-growing technique in dentistry. Dental implants solve situations that were unthinkable only a few years ago. The way we replace teeth has changed: implants are a major advance because missing teeth can be replaced without touching the neighbouring teeth.",
+          "As well as single teeth, implant-supported bridges can be made when there is a larger gap, and overdentures anchored on two, four or six implants (depending on the amount of bone). Although in this last case the denture is still removable, it gives much more security and comfort: it does not move and you can bite with more force."
+        ]
+      },
+      {
+        "menu": "Prosthetics", "titulo": "Prosthetics",
+        "bloques": [
+          "Our aim is our patients' satisfaction, which is why we offer the latest techniques for replacing teeth, both fixed and removable prostheses.",
+          "<strong>FIXED PROSTHESES:</strong> porcelain fused to metal.",
+          "<strong>REMOVABLE PROSTHESES:</strong> removable appliances in precious metals, or in resin when a metal one is not possible, for edentulous patients (with no teeth).",
+          "<strong>COMBINED PROSTHESES:</strong> a removable metal prosthesis combined with porcelain-fused-to-metal crowns fitted with attachments that clip into them, replacing the unsightly metal clasps of removable appliances. This looks more natural, as there are no visible clasps to give away that it is a prosthesis."
+        ]
+      },
+      {
+        "menu": "TMJ", "titulo": "TMJ – Temporomandibular joint treatment",
+        "bloques": [
+          "Some people clench their teeth tightly at night, sometimes because of bad habits and sometimes because of stress built up during the day. This habit causes constant tension in the jaw muscles, which ends up causing pain and discomfort as well as tooth wear. For these people, known as bruxists, there are muscle relaxation splints to wear while sleeping.",
+          "To diagnose the exact nature of the problem it is usually necessary to use articulated models of the mouth, different types of X-rays, occlusion analysis software, etc.",
+          "The way the teeth come into contact can cause discomfort, especially when opening and closing the mouth, because one side is overloaded more than the other. The longer the problem has lasted, the harder it is to treat."
+        ],
+        "faq": [
+          {"q": "What does treatment for bruxism and TMJ involve?", "a": "Successful treatment means restoring the balance between the muscles, teeth and joints. To do this we use orthopaedic, orthodontic and prosthetic techniques and different types of occlusal splints."},
+          {"q": "What are snoring and sleep apnoea?", "a": "When we sleep, the muscles and tissues of the throat and mouth relax automatically. The jaw and tongue fall back, narrowing the airway between them. The sound of snoring is actually the sound of vibrating tissue."},
+          {"q": "What does the treatment involve?", "a": "Treatment usually consists of acrylic appliances worn in the mouth at night, which prevent the problem while they are worn and can be used for life. The special splint creates more space so that air flows freely and the tissue vibration is reduced or stops. The splint is comfortable and only worn while sleeping."}
+        ]
+      }
+    ]
+  },
+
+  "contacto": {
+    "seo_title": "Contact and appointments | Clínica Dental Ontiveros, Marbella",
+    "seo_desc": "Book an appointment at Clínica Dental Ontiveros: C/ San Bernabé, Edif. Cibeles nº 3, Marbella. Tel. +34 952 92 43 22 · +34 640 08 21 01 · info@clinicadentalontiveros.es",
+    "titulo": "Contact",
+    "form_title": "Book an appointment",
+    "acepto": "I have read and accept the terms and conditions"
+  }
+}

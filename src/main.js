@@ -1,6 +1,16 @@
 // Clínica Dental Ontiveros — interacciones (sin dependencias)
 (function(){
   var root = document.documentElement;
+  var EN = (root.getAttribute('lang') || 'es').indexOf('en') === 0;
+  var TXT = EN ? {
+    close: 'Close',
+    check: 'Please check the required fields and the acceptance box.',
+    fail: 'The message could not be sent. Please call us on +34 952 92 43 22 or email info@clinicadentalontiveros.es.'
+  } : {
+    close: 'Cerrar',
+    check: 'Revise los campos obligatorios y la casilla de aceptación.',
+    fail: 'No se ha podido enviar. Llámenos al 952 92 43 22 o escriba a info@clinicadentalontiveros.es.'
+  };
 
   // Menú móvil
   var burger = document.querySelector('.burger');
@@ -66,17 +76,6 @@
     }
   }
 
-  // Mapa: solo se carga (con cookies de Google) si el usuario lo pide
-  document.querySelectorAll('[data-map]').forEach(function(box){
-    var b = box.querySelector('[data-map-load]');
-    if(b) b.addEventListener('click', function(){
-      var f = document.createElement('iframe');
-      f.src = box.getAttribute('data-map'); f.title = 'Mapa: cómo llegar a Clínica Dental Ontiveros'; f.loading = 'lazy';
-      f.referrerPolicy = 'no-referrer-when-downgrade';
-      box.innerHTML = ''; box.appendChild(f);
-    });
-  });
-
   // Visor de imágenes de las galerías
   var lb = null, lastFocus = null;
   function closeLb(){ if(lb){ lb.remove(); lb = null; if(lastFocus) lastFocus.focus(); } }
@@ -85,7 +84,7 @@
       e.preventDefault(); lastFocus = a;
       lb = document.createElement('div'); lb.className = 'lb'; lb.setAttribute('role','dialog'); lb.setAttribute('aria-modal','true');
       var img = document.createElement('img'); img.src = a.getAttribute('href'); img.alt = a.querySelector('img').alt;
-      var btn = document.createElement('button'); btn.type = 'button'; btn.setAttribute('aria-label','Cerrar');
+      var btn = document.createElement('button'); btn.type = 'button'; btn.setAttribute('aria-label', TXT.close);
       btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>';
       lb.appendChild(img); lb.appendChild(btn);
       lb.addEventListener('click', function(ev){ if(ev.target !== img) closeLb(); });
@@ -111,7 +110,7 @@
       e.preventDefault();
       var msg = form.querySelector('.form-msg');
       msg.className = 'form-msg';
-      if(!form.checkValidity()){ msg.className = 'form-msg err'; msg.textContent = 'Revise los campos obligatorios y la casilla de aceptación.'; return; }
+      if(!form.checkValidity()){ msg.className = 'form-msg err'; msg.textContent = TXT.check; return; }
       var btn = form.querySelector('button[type=submit]');
       btn.disabled = true;
       fetch(form.action, {method:'POST', body:new FormData(form)})
@@ -124,7 +123,7 @@
         })
         .catch(function(){
           msg.className = 'form-msg err';
-          msg.textContent = 'No se ha podido enviar. Llámenos al 952 92 43 22 o escriba a info@clinicadentalontiveros.es.';
+          msg.textContent = TXT.fail;
         })
         .finally(function(){ btn.disabled = false; });
     });

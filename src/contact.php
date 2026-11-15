@@ -34,7 +34,38 @@ if ($SMTP_ON) $REMITENTE = $SMTP_USER;
 $LIMITE    = 5;                             // envíos por IP...
 $VENTANA   = 900;                           // ...cada 15 minutos
 
-function out($ok, $msg, $code = 200) { http_response_code($code); echo json_encode(['ok' => $ok, 'message' => $msg]); exit; }
+// Idioma de las respuestas (lang=en en la versión inglesa de la web)
+$EN = (($_POST['lang'] ?? $_GET['lang'] ?? '') === 'en');
+$EN_MSG = [
+    'Error de configuración del formulario.' => 'Form configuration error.',
+    'Método no permitido.' => 'Method not allowed.',
+    'Origen no permitido.' => 'Origin not allowed.',
+    'Mensaje enviado. Gracias.' => 'Message sent. Thank you.',
+    'Demasiados envíos seguidos. Inténtelo más tarde o llame al 952 92 43 22.' => 'Too many attempts. Please try again later or call +34 952 92 43 22.',
+    'Recargue la página e inténtelo de nuevo.' => 'Please reload the page and try again.',
+    'El formulario ha caducado. Recargue la página.' => 'The form has expired. Please reload the page.',
+    'Revise los datos y vuelva a enviar.' => 'Please check your details and send again.',
+    'La suma no es correcta.' => 'The sum is not correct.',
+    'Indique su nombre.' => 'Please enter your name.',
+    'Indique un teléfono válido.' => 'Please enter a valid phone number.',
+    'El email no es válido.' => 'The email address is not valid.',
+    'Escriba un mensaje.' => 'Please write a message.',
+    'Debe aceptar los términos y condiciones.' => 'You must accept the terms and conditions.',
+    'El mensaje contiene demasiados enlaces.' => 'The message contains too many links.',
+    'Recibido. Le llamaremos lo antes posible.' => 'Received. We will call you as soon as possible.',
+    'Solicitud enviada. Le contactaremos para confirmar la cita.' => 'Request sent. We will contact you to confirm your appointment.',
+    'No se ha podido enviar. Llámenos al 952 92 43 22 o escriba a info@clinicadentalontiveros.es.' => 'The message could not be sent. Please call us on +34 952 92 43 22 or email info@clinicadentalontiveros.es.',
+];
+
+function out($ok, $msg, $code = 200) {
+    global $EN, $EN_MSG;
+    if ($EN) {
+        foreach ($EN_MSG as $es => $en) {
+            if (strpos($msg, $es) === 0) { $msg = $en . substr($msg, strlen($es)); break; }
+        }
+    }
+    http_response_code($code); echo json_encode(['ok' => $ok, 'message' => $msg]); exit;
+}
 
 // Clave secreta propia del servidor (se crea sola la primera vez; no está en el repositorio)
 $secretFile = __DIR__ . '/.contact-secret.php';
@@ -152,6 +183,7 @@ $cuerpo = ($tipo === 'llamada' ? "El paciente pide que le llamen.\n\n" : "Solici
         . "Nombre: " . $una($nombre) . "\nTeléfono: $telefono\n"
         . ($email !== '' ? "Email: " . $una($email) . "\n" : '')
         . ($motivo !== '' ? "Motivo: " . $una($motivo) . "\n" : '')
+        . ($EN ? "Idioma: inglés (web en inglés)\n" : '')
         . "IP: $ip\n"
         . ($mensaje !== '' ? "\nMensaje:\n" . str_replace("\0", '', $mensaje) . "\n" : '');
 $replyTo = filter_var($email, FILTER_VALIDATE_EMAIL) ? $una($email) : $REMITENTE;

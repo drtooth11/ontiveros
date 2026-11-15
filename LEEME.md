@@ -9,10 +9,16 @@ Mismo sistema que la web de Hispadent (`drtooth11/hispadent-web`, solo de refere
   - `noindex`: `true` mientras sea la web de pruebas.
   - `site.horario`: vacío = no se muestra. Formato: `{"dias": ["Monday",…], "abre": "09:00", "cierra": "14:00", "texto_dias": "Lunes a viernes", "texto_horas": "9:00 – 14:00"}`.
   - `site.google_reviews`: enlace a las opiniones de Google (vacío = no se muestra el botón).
-- `src/legal/` → textos legales. `src/img/` → imágenes (las copia `fetch_images.py`). `src/fonts/` → Fraunces + Inter autoalojadas.
+- `src/content.en.json` → textos en inglés. Se superpone a `content.json`: solo lleva textos; imágenes, enlaces e ids
+  se toman del español. Las listas se emparejan por posición: si se añade o quita un elemento en español, hay que
+  hacer lo mismo en inglés (si no, esa lista en inglés sustituye entera a la española).
+- Versión inglesa en `/en/` (`/en/about-us/`, `/en/medical-team/`, `/en/facilities/`, `/en/treatments/`, `/en/contact/`,
+  `/en/legal-notice/`, `/en/privacy-policy/`, `/en/cookie-policy/`), con selector ES/EN, hreflang y sitemap con alternativas.
+  Los textos fijos de la interfaz (botones, formulario, pie…) están en el diccionario `UI` de `build.py`.
+- `src/legal/` → textos legales (en inglés en `src/legal/en/`). `src/img/` → imágenes (las copia `fetch_images.py`). `src/fonts/` → Fraunces + Inter autoalojadas.
 - `build.py` → genera la web en `dist/` (WebP, sitemap, robots, .htaccess, datos estructurados `Dentist`, FAQPage, 404 propia).
 - `deploy.py` + `receptor/deploy.php` → publicación automática por HTTPS desde GitHub.
-- `src/contact.php` → formulario de cita y "Te llamamos". Llega a `m.musso@celdas.com` (se cambia en `$DESTINO`).
+- `src/contact.php` → formulario de cita y "Te llamamos". Responde en inglés si viene de la web en inglés (`lang=en`) y lo indica en el correo. Llega a `m.musso@celdas.com` (se cambia en `$DESTINO`).
 
 ## Actualizar
 Editar `src/content.json` (o pedírselo a Claude), `python3 build.py`, commit y push a `main`.

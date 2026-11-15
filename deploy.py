@@ -123,7 +123,7 @@ if bad:
     again = [(p, status(p)) for p, _ in bad]
     fail(f"La web daba error {bad} con el .htaccess completo; se ha puesto uno mínimo. Tras el cambio: {again}")
 # Comprobación de páginas clave: todas deben responder 200
-codes = {p: status(p) for p in ("", "quienes-somos/", "tratamientos/", "contacto/", "assets/styles.css")}
+codes = {p: status(p) for p in ("", "quienes-somos/", "tratamientos/", "contacto/", "en/", "en/treatments/", "assets/styles.css")}
 if any(c != 200 for c in codes.values()):
     fail(f"La web no responde bien tras publicar: {codes}")
 print(f"OK: {sent} archivos publicados, web respondiendo correctamente")
