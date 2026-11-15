@@ -76,6 +76,35 @@
     }
   }
 
+  // Cookiebot: el mapa de Google solo se carga si se aceptan las cookies de marketing
+  var maps = document.querySelectorAll('iframe[data-cookieconsent][data-src]');
+  function showMaps(){
+    maps.forEach(function(f){
+      if(!f.getAttribute('src')) f.setAttribute('src', f.getAttribute('data-src'));
+      f.hidden = false;
+      var ph = f.parentNode.querySelector('[data-map-ph]'); if(ph) ph.hidden = true;
+    });
+  }
+  function checkConsent(){
+    var cb = window.Cookiebot;
+    if(cb && cb.consent && cb.consent.marketing) showMaps();
+  }
+  window.addEventListener('CookiebotOnConsentReady', checkConsent);
+  window.addEventListener('CookiebotOnAccept', checkConsent);
+  checkConsent();
+  document.querySelectorAll('[data-map-consent]').forEach(function(b){
+    b.addEventListener('click', function(){
+      // Sin Cookiebot (bloqueado por el navegador) el clic del visitante cuenta como permiso para ver el mapa
+      if(window.Cookiebot && window.Cookiebot.renew) window.Cookiebot.renew(); else showMaps();
+    });
+  });
+  document.querySelectorAll('[data-cookie-settings]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      if(window.Cookiebot && window.Cookiebot.renew) window.Cookiebot.renew();
+    });
+  });
+
   // Visor de imágenes de las galerías
   var lb = null, lastFocus = null;
   function closeLb(){ if(lb){ lb.remove(); lb = null; if(lastFocus) lastFocus.focus(); } }

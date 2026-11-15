@@ -294,6 +294,11 @@ a.ci:hover{background:#e2eef9}
 .ci-h{font-weight:600;color:var(--ink);font-size:.92rem}
 .map{border-radius:var(--r-lg);overflow:hidden;background:var(--sky);margin-top:24px;border:1px solid var(--line)}
 .map iframe{display:block;width:100%;height:420px;border:0;background:var(--sky)}
+.map-frame{position:relative}
+.map-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;min-height:320px;padding:32px 24px;background:linear-gradient(135deg,#e6f0fa,#f6f9fd);color:var(--muted)}
+.map-ph p{margin:0;max-width:30em}
+.map-ph>svg{width:36px;height:36px;color:var(--sun)}
+.contact-home .map-ph{min-height:240px}
 .map-bar{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;padding:16px 20px;background:#fff;border-top:1px solid var(--line)}
 .map-addr{display:flex;align-items:center;gap:8px;margin:0;font-weight:600;color:var(--ink);font-size:.95rem}
 .map-addr svg{width:20px;height:20px;color:var(--sun);flex:none}

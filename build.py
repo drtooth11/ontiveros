@@ -96,6 +96,8 @@ UI = {
   "ct_lead": "Pide tu cita online, llámanos o escríbenos por WhatsApp.", "ct_call": "Llámanos", "ct_mobile": "Móvil",
   "ct_wa_txt": "Escríbenos y te respondemos", "ct_mail": "Escríbenos", "ct_visit": "Visítanos", "ct_hours": "Horario",
   "legal_desc": "{t} del sitio web de {n} (Marbella).",
+  "cookie_cfg": "Configurar cookies", "cookie_decl": "Cookies que utiliza esta web",
+  "map_consent": "Para ver el mapa de Google hay que aceptar sus cookies.", "map_show": "Mostrar mapa",
  },
  "en": {
   "skip": "Skip to content", "home_aria": "home", "menu": "Open menu", "nav_aria": "Main",
@@ -129,6 +131,8 @@ UI = {
   "ct_lead": "Book online, call us or message us on WhatsApp.", "ct_call": "Call us", "ct_mobile": "Mobile",
   "ct_wa_txt": "Message us and we will reply", "ct_mail": "Email us", "ct_visit": "Visit us", "ct_hours": "Opening hours",
   "legal_desc": "{t} of the {n} website (Marbella).",
+  "cookie_cfg": "Cookie settings", "cookie_decl": "Cookies used on this website",
+  "map_consent": "To view the Google map you need to accept its cookies.", "map_show": "Show map",
  },
 }
 
@@ -252,6 +256,13 @@ def lang_switch(key):
     return (f'<a class="lang-sw" href="{L(target, other)}" hreflang="{other}" lang="{other}" '
             f'title="{UI[other]["lang_switch"]}">{other.upper()}</a>')
 
+def cookiebot_tag():
+    cb = BASE["site"].get("cookiebot_id")
+    if not cb:
+        return ""
+    return (f'<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{cb}" '
+            f'data-blockingmode="auto" data-culture="{LANG.upper()}" type="text/javascript"></script>\n')
+
 def clinic_jsonld():
     d = {
         "@context": "https://schema.org",
@@ -325,7 +336,7 @@ def page(key, title, body, desc, h1=None, og_img=None, extra_ld=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{e(title)}</title>
+{cookiebot_tag()}<title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="{robots}">
 {head_links}<meta name="theme-color" content="#0b3a6e">
@@ -389,7 +400,7 @@ def page(key, title, body, desc, h1=None, og_img=None, extra_ld=None):
     </div>
     <div class="f-bottom">
       <span>© {TODAY[:4]} {e(S["name"])}</span>
-      <ul>{"".join(f'<li><a href="{L(k)}">{T["legal"][k]}</a></li>' for k, _ in LEGAL)}<li><a href="{L(key if is_page else "home", "en" if LANG == "es" else "es")}" hreflang="{"en" if LANG == "es" else "es"}">{UI["en" if LANG == "es" else "es"]["lang_name"]}</a></li></ul>
+      <ul>{"".join(f'<li><a href="{L(k)}">{T["legal"][k]}</a></li>' for k, _ in LEGAL)}<li><a href="#" data-cookie-settings>{T["cookie_cfg"]}</a></li><li><a href="{L(key if is_page else "home", "en" if LANG == "es" else "es")}" hreflang="{"en" if LANG == "es" else "es"}">{UI["en" if LANG == "es" else "es"]["lang_name"]}</a></li></ul>
     </div>
   </div>
 </footer>
@@ -510,7 +521,10 @@ def callback_form():
 def map_box():
     """Mapa de Google siempre visible, con los botones de ruta y ficha debajo."""
     return f'''<div class="map">
-  <iframe src="{maps_embed()}" title="{T["map_title"]}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <div class="map-frame">
+    <iframe data-src="{maps_embed()}" data-cookieconsent="marketing" title="{T["map_title"]}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen hidden></iframe>
+    <div class="map-ph" data-map-ph>{I["pin"]}<p>{T["map_consent"]}</p><button class="btn btn-primary btn-sm" type="button" data-map-consent>{T["map_show"]}</button></div>
+  </div>
   <div class="map-bar">
     <p class="map-addr">{I["pin"]}<span>{e(S["address"])}</span></p>
     <div class="map-actions">
@@ -756,6 +770,10 @@ def build_legal():
     for key, src in LEGAL:
         title = T["legal"][key]
         content = (folder / src).read_text(encoding="utf-8")
+        cb = BASE["site"].get("cookiebot_id")
+        if key == "cookies" and cb:
+            content += (f'\n<h2>{T["cookie_decl"]}</h2>\n<script id="CookieDeclaration" '
+                        f'src="https://consent.cookiebot.com/{cb}/cd.js" data-culture="{LANG.upper()}" type="text/javascript" async></script>\n')
         body = f'''{page_hero(title)}
 <section class="sec"><div class="wrap narrow"><article class="legal">
 {content}
@@ -788,9 +806,10 @@ def build_sitemap():
     (DIST / "robots.txt").write_text(robots, encoding="utf-8")
 
 def build_htaccess():
-    csp = ("default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
-           f"img-src 'self' data: {RES}; font-src 'self'; connect-src 'self'; "
-           "frame-src https://maps.google.com https://www.google.com; form-action 'self'; "
+    CBD = "https://consent.cookiebot.com https://consentcdn.cookiebot.com"
+    csp = (f"default-src 'self'; script-src 'self' {CBD}; style-src 'self' 'unsafe-inline'; "
+           f"img-src 'self' data: {RES} https://imgsct.cookiebot.com; font-src 'self'; connect-src 'self' {CBD}; "
+           "frame-src https://maps.google.com https://www.google.com https://consentcdn.cookiebot.com; form-action 'self'; "
            "base-uri 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests")
     root_rules = ""
     if PREFIX == "/":
