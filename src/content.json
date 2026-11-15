@@ -1,7 +1,7 @@
 {
-  "url_publica": "https://clinicadentalontiveros.es/web/",
+  "url_publica": "https://clinicadentalontiveros.es/",
   "recursos": "https://clinicadentalontiveros.es",
-  "noindex": true,
+  "noindex": false,
 
   "site": {
     "name": "Clínica Dental Ontiveros",
