@@ -76,8 +76,19 @@
     }
   }
 
-  // Cookiebot: el mapa de Google solo se carga si se aceptan las cookies de marketing
-  var maps = document.querySelectorAll('iframe[data-cookieconsent][data-src]');
+  // Consentimiento de cookies (banner propio). La elección se guarda en la cookie técnica cdo_consent.
+  // Con Cookiebot activo (cookiebot_id en content.json) se usa su consentimiento de marketing.
+  var CK = 'cdo_consent';
+  function readConsent(){
+    var m = document.cookie.match(/(?:^|; )cdo_consent=([^;]*)/);
+    if(!m) return null;
+    try { return JSON.parse(decodeURIComponent(m[1])); } catch(e){ return null; }
+  }
+  function writeConsent(maps){
+    var v = encodeURIComponent(JSON.stringify({maps: !!maps, v: 1, d: new Date().toISOString().slice(0,10)}));
+    document.cookie = CK + '=' + v + '; Max-Age=' + (60*60*24*365) + '; Path=/; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
+  }
+  var maps = document.querySelectorAll('iframe[data-consent="maps"][data-src]');
   function showMaps(){
     maps.forEach(function(f){
       if(!f.getAttribute('src')) f.setAttribute('src', f.getAttribute('data-src'));
@@ -85,23 +96,52 @@
       var ph = f.parentNode.querySelector('[data-map-ph]'); if(ph) ph.hidden = true;
     });
   }
-  function checkConsent(){
-    var cb = window.Cookiebot;
-    if(cb && cb.consent && cb.consent.marketing) showMaps();
+  function hideMaps(){
+    maps.forEach(function(f){
+      f.removeAttribute('src'); f.hidden = true;
+      var ph = f.parentNode.querySelector('[data-map-ph]'); if(ph) ph.hidden = false;
+    });
   }
-  window.addEventListener('CookiebotOnConsentReady', checkConsent);
-  window.addEventListener('CookiebotOnAccept', checkConsent);
-  checkConsent();
-  document.querySelectorAll('[data-map-consent]').forEach(function(b){
-    b.addEventListener('click', function(){
-      // Sin Cookiebot (bloqueado por el navegador) el clic del visitante cuenta como permiso para ver el mapa
-      if(window.Cookiebot && window.Cookiebot.renew) window.Cookiebot.renew(); else showMaps();
+  var ck = document.getElementById('ck');
+  var ckBox = ck ? ck.querySelector('[data-ck="maps"]') : null;
+  function ckOpen(config){
+    if(!ck) return;
+    var c = readConsent();
+    if(ckBox) ckBox.checked = !!(c && c.maps);
+    ck.querySelector('.ck-cfg').hidden = !config;
+    ck.querySelector('[data-ck-config]').hidden = !!config;
+    ck.querySelector('[data-ck-save]').hidden = !config;
+    ck.hidden = false;
+    document.body.classList.add('ck-open');
+  }
+  function ckClose(){ if(ck){ ck.hidden = true; document.body.classList.remove('ck-open'); } }
+  function decide(m){ writeConsent(m); ckClose(); if(m) showMaps(); else hideMaps(); }
+  if(ck){
+    ck.querySelector('[data-ck-accept]').addEventListener('click', function(){ decide(true); });
+    ck.querySelector('[data-ck-reject]').addEventListener('click', function(){ decide(false); });
+    ck.querySelector('[data-ck-config]').addEventListener('click', function(){ ckOpen(true); });
+    ck.querySelector('[data-ck-save]').addEventListener('click', function(){ decide(ckBox && ckBox.checked); });
+    var c0 = readConsent();
+    if(c0){ if(c0.maps) showMaps(); } else ckOpen(false);
+  } else {
+    // Cookiebot activo
+    var cbCheck = function(){ var cb = window.Cookiebot; if(cb && cb.consent && cb.consent.marketing) showMaps(); };
+    window.addEventListener('CookiebotOnConsentReady', cbCheck);
+    window.addEventListener('CookiebotOnAccept', cbCheck);
+    cbCheck();
+  }
+  // "Aceptar y mostrar mapa": el clic del visitante es su consentimiento para Google Maps
+  document.querySelectorAll('[data-map-consent]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(ck){ decide(true); }
+      else if(window.Cookiebot && window.Cookiebot.renew){ window.Cookiebot.renew(); }
+      else { showMaps(); }
     });
   });
   document.querySelectorAll('[data-cookie-settings]').forEach(function(a){
     a.addEventListener('click', function(e){
       e.preventDefault();
-      if(window.Cookiebot && window.Cookiebot.renew) window.Cookiebot.renew();
+      if(ck) ckOpen(true); else if(window.Cookiebot && window.Cookiebot.renew) window.Cookiebot.renew();
     });
   });
 

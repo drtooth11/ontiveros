@@ -318,6 +318,11 @@ a.ci:hover{background:#e2eef9}
 .legal h2{font-size:1.35rem;margin-top:2em}
 .legal h3{font-size:1.1rem}
 .legal p,.legal li{color:var(--muted);font-size:.98rem}
+.tbl{overflow-x:auto;margin:0 0 1.2em;border:1px solid var(--line);border-radius:var(--r-sm)}
+.legal table{width:100%;min-width:560px;border-collapse:collapse;font-size:.9rem}
+.legal th,.legal td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);color:var(--muted)}
+.legal th{background:var(--sky);color:var(--ink);font-weight:600}
+.legal tr:last-child td{border-bottom:0}
 
 /* ---------- Pie ---------- */
 .footer{background:var(--ink-2);color:#b9cde6;padding:72px 0 28px;font-size:.95rem}
@@ -338,6 +343,19 @@ a.ci:hover{background:#e2eef9}
 .wa-float svg{width:32px;height:32px}
 .wa-float:hover{transform:scale(1.06);color:#fff}
 .mbar{display:none}
+
+/* Banner de cookies */
+.ck{position:fixed;left:16px;right:16px;bottom:16px;z-index:90;display:flex;justify-content:center;pointer-events:none}
+.ck-in{pointer-events:auto;width:100%;max-width:760px;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);box-shadow:0 30px 60px -20px rgba(11,58,110,.45);padding:20px 22px}
+.ck-t{font-family:var(--serif);font-size:1.2rem;color:var(--ink);margin:0 0 .3em}
+.ck-x{font-size:.93rem;color:var(--muted);margin:0 0 14px}
+.ck-cfg{border-top:1px solid var(--line);margin:0 0 14px}
+.ck-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.ck-row strong{display:block;color:var(--ink);font-size:.95rem}
+.ck-row small{display:block;color:var(--muted);font-size:.85rem;line-height:1.45}
+.ck-row input{width:22px;height:22px;flex:none;accent-color:var(--blue)}
+.ck-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.ck-btns .btn{flex:0 0 auto}
 
 /* Visor de imágenes */
 .lb{position:fixed;inset:0;z-index:300;background:rgba(5,20,40,.92);display:grid;place-items:center;padding:24px}
@@ -409,6 +427,8 @@ a.ci:hover{background:#e2eef9}
   .mbar a:nth-child(2) svg{color:#25d366}
   .mbar .mbar-cita{background:var(--sun);color:#fff;flex-direction:row;gap:8px;font-size:.98rem}
   .wa-float{display:none}
+  .ck{left:10px;right:10px;bottom:calc(76px + env(safe-area-inset-bottom))}
+  .ck-btns .btn{flex:1 1 auto}
 }
 @media (max-width:560px){
   body{font-size:16px}
