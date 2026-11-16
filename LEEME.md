@@ -61,3 +61,13 @@ redirigen (301) a la portada.
 3. Mover WordPress a una carpeta bloqueada (`wp_old/`, ya bloqueada por el .htaccess) conservando `wp-content/uploads/` si alguna imagen no está en `src/img/`.
 4. Push → workflow verde → ejecutar `Comprobar enlaces e imágenes`.
 5. Dar de alta `https://clinicadentalontiveros.es/sitemap.xml` en Google Search Console.
+
+## Cookies
+- Banner propio (sin servicios externos): `consent_banner()` en `build.py` y la lógica en `src/main.js`.
+  La elección se guarda 12 meses en la cookie técnica `cdo_consent`. El mapa de Google solo se carga si se aceptan
+  sus cookies (o con «Aceptar y mostrar mapa»). «Configurar cookies» en el pie vuelve a abrir el banner.
+- La política de cookies (`src/legal/politica-de-cookies.html` y `src/legal/en/…`) lista lo que la web usa de verdad.
+  Si algún día se añade Analytics u otra herramienta, hay que añadirla al banner y a la política.
+- Cookiebot está preparado pero desactivado: el cortafuegos del hosting (LiteSpeed/Imunify) bloquea a su robot (403)
+  y no puede verificar ni escanear. Para reactivarlo: poner el id en `site.cookiebot_id` (está guardado en
+  `cookiebot_id_desactivado`) y pedir al hosting que deje pasar al robot de Cookiebot.
